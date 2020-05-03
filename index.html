@@ -50,7 +50,7 @@
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
-       href="/">&nbsp;<strong>”RRW_BLOG“ ;</strong>&nbsp;</a>
+       href="/">&nbsp;<strong>RRW_BLOG</strong>&nbsp;</a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -264,6 +264,29 @@
   
 
   
+    <!-- APlayer 音乐播放器 -->
+    <div id="aplayer"></div>
+    <script defer src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js" ></script>
+<link  rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css" />
+<script type="text/javascript">
+  var oldLoadAp = window.onload;
+  window.onload = function () {
+    oldLoadAp && oldLoadAp();
+
+    new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      autoplay: 'true' === 'true',
+      loop: 'all',
+      order: 'random',
+      theme: '#b7daff',
+      preload: 'none',
+      audio: [{"name":"你要跳舞吗","artist":"新裤子","url":"/songs/你要跳舞吗.mp3","cover":"/img/thinking.png"},{"name":"你都忘了你有多美","artist":"新裤子","url":"/songs/你都忘了你有多美.mp3","cover":"/img/thinking.png"},{"name":"No Question of Disco","artist":"新裤子","url":"/songs/No Question of Disco.mp3","cover":"/img/thinking.png"},{"name":"没有理想的人不伤心","artist":"新裤子","url":"/songs/没有理想的人不伤心.mp3","cover":"/img/thinking.png"},{"name":"Valder Fields","artist":"Tamas Wells","url":"/songs/Valder Fields.mp3","cover":"/img/thinking.png"},{"name":"Guaranteed","artist":"Eddie Vedder","url":"/songs/Guaranteed.mp3","cover":"/img/thinking.png"}]
+    });
+  }
+</script>
+
+  
 
   
 
@@ -312,7 +335,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "Hi BOY~&nbsp;",
+        "Welcome and Hello World~&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
