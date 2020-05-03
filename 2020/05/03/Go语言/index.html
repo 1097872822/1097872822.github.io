@@ -143,7 +143,7 @@
                   
                   <span class="post-meta mr-2">
                     <i class="iconfont icon-chart"></i>
-                    78 字
+                    2.1k 字
                   </span>
                 
 
@@ -153,7 +153,7 @@
                       <i class="iconfont icon-clock-fill"></i>
                     
                     
-                    1
+                    26
                      分钟
                   </span>
                 
@@ -194,6 +194,307 @@
 <h5 id="2、操作下："><a href="#2、操作下：" class="headerlink" title="2、操作下："></a>2、操作下：</h5><p><img src="/2020/05/03/Go%E8%AF%AD%E8%A8%80/image-20200405163005796.png" srcset="/img/loading.gif" alt="image-20200405163005796"></p>
 <h5 id="或者-：-https-www-cnblogs-com-xll970105-p-11906899-html"><a href="#或者-：-https-www-cnblogs-com-xll970105-p-11906899-html" class="headerlink" title="或者 ：(https://www.cnblogs.com/xll970105/p/11906899.html)"></a>或者 ：(<a href="https://www.cnblogs.com/xll970105/p/11906899.html" target="_blank" rel="noopener">https://www.cnblogs.com/xll970105/p/11906899.html</a>)</h5><h5 id="完成后："><a href="#完成后：" class="headerlink" title="完成后："></a>完成后：</h5><p><img src="/2020/05/03/Go%E8%AF%AD%E8%A8%80/image-20200405163355279.png" srcset="/img/loading.gif" alt="image-20200405163355279"></p>
 <p><img src="/2020/05/03/Go%E8%AF%AD%E8%A8%80/image-20200405183401842.png" srcset="/img/loading.gif" alt="image-20200405183401842"></p>
+<h1 id="二、编译-amp-入门："><a href="#二、编译-amp-入门：" class="headerlink" title="二、编译 &amp; 入门："></a>二、编译 &amp; 入门：</h1><h2 id="1、编译："><a href="#1、编译：" class="headerlink" title="1、编译："></a>1、编译：</h2><h4 id="go-build：在项目下执行；"><a href="#go-build：在项目下执行；" class="headerlink" title="go build：在项目下执行；"></a><code>go build</code>：在项目下执行；</h4><h4 id="go-run：执行脚本文件；"><a href="#go-run：执行脚本文件；" class="headerlink" title="go run：执行脚本文件；"></a><code>go run</code>：执行脚本文件；</h4><h4 id="go-install表示安装的意思，它先编译源代码得到可执行文件，然后将可执行文件移动到GOPATH的bin目录下。因为我们的环境变量中配置了GOPATH下的bin目录，所以我们就可以在任意地方直接执行可执行文件了。"><a href="#go-install表示安装的意思，它先编译源代码得到可执行文件，然后将可执行文件移动到GOPATH的bin目录下。因为我们的环境变量中配置了GOPATH下的bin目录，所以我们就可以在任意地方直接执行可执行文件了。" class="headerlink" title="go install表示安装的意思，它先编译源代码得到可执行文件，然后将可执行文件移动到GOPATH的bin目录下。因为我们的环境变量中配置了GOPATH下的bin目录，所以我们就可以在任意地方直接执行可执行文件了。"></a><code>go install</code>表示安装的意思，它先编译源代码得到可执行文件，然后将可执行文件移动到<code>GOPATH</code>的bin目录下。因为我们的环境变量中配置了<code>GOPATH</code>下的bin目录，所以我们就可以在任意地方直接执行可执行文件了。</h4><h3 id="1-1跨平台编译"><a href="#1-1跨平台编译" class="headerlink" title="1.1跨平台编译"></a>1.1跨平台编译</h3><p>默认我们<code>go build</code>的可执行文件都是当前操作系统可执行的文件，如果我想在windows下编译一个linux下可执行文件，那需要怎么做呢？</p>
+<p>只需要指定目标操作系统的平台和处理器架构即可：</p>
+<pre><code class="hljs bash">SET CGO_ENABLED=0  // 禁用CGO
+SET GOOS=linux  // 目标平台是linux
+SET GOARCH=amd64  // 目标处理器架构是amd64</code></pre>
+
+<p><img src="/2020/05/03/Go%E8%AF%AD%E8%A8%80/image-20200406154851399.png" srcset="/img/loading.gif" alt="image-20200406154851399"></p>
+<p><em>使用了cgo的代码是不支持跨平台编译的</em></p>
+<p>然后再执行<code>go build</code>命令，得到的就是能够在Linux平台运行的可执行文件了。</p>
+<h4 id="Mac-下编译-Linux-和-Windows平台-64位-可执行程序："><a href="#Mac-下编译-Linux-和-Windows平台-64位-可执行程序：" class="headerlink" title="Mac 下编译 Linux 和 Windows平台 64位 可执行程序："></a>Mac 下编译 Linux 和 Windows平台 64位 可执行程序：</h4><pre><code class="hljs bash">CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
+CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build</code></pre>
+
+<h4 id="Linux-下编译-Mac-和-Windows-平台64位可执行程序："><a href="#Linux-下编译-Mac-和-Windows-平台64位可执行程序：" class="headerlink" title="Linux 下编译 Mac 和 Windows 平台64位可执行程序："></a>Linux 下编译 Mac 和 Windows 平台64位可执行程序：</h4><pre><code class="hljs bash">CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build
+CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build</code></pre>
+
+<h4 id="Windows下编译Mac平台64位可执行程序："><a href="#Windows下编译Mac平台64位可执行程序：" class="headerlink" title="Windows下编译Mac平台64位可执行程序："></a>Windows下编译Mac平台64位可执行程序：</h4><pre><code class="hljs bash">SET CGO_ENABLED=0
+SET GOOS=darwin
+SET GOARCH=amd64
+go build</code></pre>
+
+<h3 id="2、变量和常量："><a href="#2、变量和常量：" class="headerlink" title="2、变量和常量："></a>2、变量和常量：</h3><h5 id="2-1声明"><a href="#2-1声明" class="headerlink" title="2.1声明"></a>2.1声明</h5><pre><code class="hljs go"><span class="hljs-keyword">var</span> name <span class="hljs-keyword">string</span>
+<span class="hljs-keyword">var</span> age <span class="hljs-keyword">int</span>
+<span class="hljs-keyword">var</span> isOk <span class="hljs-keyword">bool</span></code></pre>
+
+<p>同等于</p>
+<pre><code class="hljs go"><span class="hljs-keyword">var</span> (
+    name <span class="hljs-keyword">string</span>
+    age <span class="hljs-keyword">int</span>
+    isOk <span class="hljs-keyword">bool</span>
+)</code></pre>
+
+<h5 id="2-2短变量声明"><a href="#2-2短变量声明" class="headerlink" title="2.2短变量声明"></a>2.2短变量声明</h5><p>在函数内部，可以使用更简略的 <code>:=</code> 方式声明并初始化变量。<strong><em>（注意不可以在函数外使用）</em></strong></p>
+<pre><code class="hljs go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+	<span class="hljs-string">"fmt"</span>
+)
+<span class="hljs-comment">// 全局变量m</span>
+<span class="hljs-keyword">var</span> m = <span class="hljs-number">100</span>
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> &#123;
+	n := <span class="hljs-number">10</span>
+	m := <span class="hljs-number">200</span> <span class="hljs-comment">// 此处声明局部变量m</span>
+	fmt.Println(m, n)
+&#125;</code></pre>
+
+<blockquote>
+<h5 id="2-3-iota"><a href="#2-3-iota" class="headerlink" title="2.3   iota"></a>2.3   <a href><strong>iota</strong></a></h5></blockquote>
+<p><code>iota</code>是go语言的常量计数器，只能在常量的表达式中使用。</p>
+<p><code>iota</code>在const关键字出现时将被重置为0。const中每新增一行常量声明将使<code>iota</code>计数一次(iota可理解为const语句块中的行索引)。 使用iota能简化定义，在定义枚举时很有用。</p>
+<p>举个例子：</p>
+<pre><code class="hljs go"><span class="hljs-keyword">const</span> (
+		n1 = <span class="hljs-literal">iota</span> <span class="hljs-comment">//0</span>
+		n2        <span class="hljs-comment">//1</span>
+		n3        <span class="hljs-comment">//2</span>
+		n4        <span class="hljs-comment">//3</span>
+	)</code></pre>
+
+<h5 id="2-4几个常见的iota示例"><a href="#2-4几个常见的iota示例" class="headerlink" title="2.4几个常见的iota示例:"></a>2.4几个常见的<code>iota</code>示例:</h5><p>使用<code>_</code>跳过某些值</p>
+<pre><code class="hljs go"><span class="hljs-keyword">const</span> (
+		n1 = <span class="hljs-literal">iota</span> <span class="hljs-comment">//0</span>
+		n2        <span class="hljs-comment">//1</span>
+		_
+		n4        <span class="hljs-comment">//3</span>
+	)</code></pre>
+
+<p><code>iota</code>声明中间插队</p>
+<pre><code class="hljs go"><span class="hljs-keyword">const</span> (
+		n1 = <span class="hljs-literal">iota</span> <span class="hljs-comment">//0</span>
+		n2 = <span class="hljs-number">100</span>  <span class="hljs-comment">//100</span>
+		n3 = <span class="hljs-literal">iota</span> <span class="hljs-comment">//2</span>
+		n4        <span class="hljs-comment">//3</span>
+	)
+	<span class="hljs-keyword">const</span> n5 = <span class="hljs-literal">iota</span> <span class="hljs-comment">//0</span></code></pre>
+
+<p>定义数量级 （这里的<code>&lt;&lt;</code>表示左移操作，<code>1&lt;&lt;10</code>表示将1的二进制表示向左移10位，也就是由<code>1</code>变成了<code>10000000000</code>，也就是十进制的1024。同理<code>2&lt;&lt;2</code>表示将2的二进制表示向左移2位，也就是由<code>10</code>变成了<code>1000</code>，也就是十进制的8。）</p>
+<pre><code class="hljs go"><span class="hljs-keyword">const</span> (
+		_  = <span class="hljs-literal">iota</span>
+		KB = <span class="hljs-number">1</span> &lt;&lt; (<span class="hljs-number">10</span> * <span class="hljs-literal">iota</span>)
+		MB = <span class="hljs-number">1</span> &lt;&lt; (<span class="hljs-number">10</span> * <span class="hljs-literal">iota</span>)
+		GB = <span class="hljs-number">1</span> &lt;&lt; (<span class="hljs-number">10</span> * <span class="hljs-literal">iota</span>)
+		TB = <span class="hljs-number">1</span> &lt;&lt; (<span class="hljs-number">10</span> * <span class="hljs-literal">iota</span>)
+		PB = <span class="hljs-number">1</span> &lt;&lt; (<span class="hljs-number">10</span> * <span class="hljs-literal">iota</span>)
+	)</code></pre>
+
+<p>多个<code>iota</code>定义在一行</p>
+<pre><code class="hljs go"><span class="hljs-keyword">const</span> (
+		a, b = <span class="hljs-literal">iota</span> + <span class="hljs-number">1</span>, <span class="hljs-literal">iota</span> + <span class="hljs-number">2</span> <span class="hljs-comment">//1,2</span>
+		c, d                      <span class="hljs-comment">//2,3</span>
+		e, f                      <span class="hljs-comment">//3,4</span>
+	)</code></pre>
+
+
+
+
+
+<h3 id="3、数字类型："><a href="#3、数字类型：" class="headerlink" title="3、数字类型："></a>3、数字类型：</h3><h5 id="其中，uint8就是我们熟知的byte型，int16对应C语言中的short型，int64对应C语言中的long型。"><a href="#其中，uint8就是我们熟知的byte型，int16对应C语言中的short型，int64对应C语言中的long型。" class="headerlink" title="其中，uint8就是我们熟知的byte型，int16对应C语言中的short型，int64对应C语言中的long型。"></a>其中，<code>uint8</code>就是我们熟知的<code>byte</code>型，<code>int16</code>对应C语言中的<code>short</code>型，<code>int64</code>对应C语言中的<code>long</code>型。</h5><table>
+<thead>
+<tr>
+<th align="center">类型</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">uint8</td>
+<td align="center">无符号 8位整型 (0 到 255)</td>
+</tr>
+<tr>
+<td align="center">uint16</td>
+<td align="center">无符号 16位整型 (0 到 65535)</td>
+</tr>
+<tr>
+<td align="center">uint32</td>
+<td align="center">无符号 32位整型 (0 到 4294967295)</td>
+</tr>
+<tr>
+<td align="center">uint64</td>
+<td align="center">无符号 64位整型 (0 到 18446744073709551615)</td>
+</tr>
+<tr>
+<td align="center">int8</td>
+<td align="center">有符号 8位整型 (-128 到 127)</td>
+</tr>
+<tr>
+<td align="center">int16</td>
+<td align="center">有符号 16位整型 (-32768 到 32767)</td>
+</tr>
+<tr>
+<td align="center">int32</td>
+<td align="center">有符号 32位整型 (-2147483648 到 2147483647)</td>
+</tr>
+<tr>
+<td align="center">int64</td>
+<td align="center">有符号 64位整型 (-9223372036854775808 到 9223372036854775807)</td>
+</tr>
+</tbody></table>
+<h3 id="3-1数字字面量语法（Number-literals-syntax）"><a href="#3-1数字字面量语法（Number-literals-syntax）" class="headerlink" title="3.1数字字面量语法（Number literals syntax）"></a>3.1数字字面量语法（Number literals syntax）</h3><h4 id="v-0b00101101，-代表二进制的-101101，相当于十进制的-45。-v-0o377，代表八进制的-377，相当于十进制的-255。-v-0x1p-2，代表十六进制的-1-除以-2²，也就是-0-25。-而且还允许我们用-来分隔数字，比如说："><a href="#v-0b00101101，-代表二进制的-101101，相当于十进制的-45。-v-0o377，代表八进制的-377，相当于十进制的-255。-v-0x1p-2，代表十六进制的-1-除以-2²，也就是-0-25。-而且还允许我们用-来分隔数字，比如说：" class="headerlink" title="v := 0b00101101， 代表二进制的 101101，相当于十进制的 45。 v := 0o377，代表八进制的 377，相当于十进制的 255。 v := 0x1p-2，代表十六进制的 1 除以 2²，也就是 0.25。 而且还允许我们用 _ 来分隔数字，比如说："></a>v := 0b00101101， 代表二进制的 101101，相当于十进制的 45。 v := 0o377，代表八进制的 377，相当于十进制的 255。 v := 0x1p-2，代表十六进制的 1 除以 2²，也就是 0.25。 而且还允许我们用 _ 来分隔数字，比如说：</h4><h4 id="v-123-456-等于-123456。"><a href="#v-123-456-等于-123456。" class="headerlink" title="v := 123_456 等于 123456。"></a>v := 123_456 等于 123456。</h4><h3 id="3-2打印浮点数时，可以使用fmt包配合动词-f，代码如下："><a href="#3-2打印浮点数时，可以使用fmt包配合动词-f，代码如下：" class="headerlink" title="3.2打印浮点数时，可以使用fmt包配合动词%f，代码如下："></a>3.2打印浮点数时，可以使用<code>fmt</code>包配合动词<code>%f</code>，代码如下：</h3><pre><code class="hljs go"><span class="hljs-keyword">package</span> main
+<span class="hljs-keyword">import</span> (
+        <span class="hljs-string">"fmt"</span>
+        <span class="hljs-string">"math"</span>
+)
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> &#123;
+        fmt.Printf(<span class="hljs-string">"%f\n"</span>, math.Pi)
+        fmt.Printf(<span class="hljs-string">"%.2f\n"</span>, math.Pi)
+&#125;</code></pre>
+
+
+
+<h3 id="3-3复数"><a href="#3-3复数" class="headerlink" title="3.3复数"></a>3.3复数</h3><p>complex64和complex128</p>
+<pre><code class="hljs go"><span class="hljs-keyword">var</span> c1 <span class="hljs-keyword">complex64</span>
+c1 = <span class="hljs-number">1</span> + <span class="hljs-number">2i</span>
+<span class="hljs-keyword">var</span> c2 <span class="hljs-keyword">complex128</span>
+c2 = <span class="hljs-number">2</span> + <span class="hljs-number">3i</span>
+fmt.Println(c1)
+fmt.Println(c2)</code></pre>
+
+
+
+<h3 id="3-4布尔型"><a href="#3-4布尔型" class="headerlink" title="3.4布尔型"></a>3.4布尔型</h3><h4 id="Go语言中以bool类型进行声明布尔型数据，布尔型数据只有true（真）和false（假）两个值。"><a href="#Go语言中以bool类型进行声明布尔型数据，布尔型数据只有true（真）和false（假）两个值。" class="headerlink" title="Go语言中以bool类型进行声明布尔型数据，布尔型数据只有true（真）和false（假）两个值。"></a>Go语言中以<code>bool</code>类型进行声明布尔型数据，布尔型数据只有<code>true（真）</code>和<code>false（假）</code>两个值。</h4><ol>
+<li>布尔类型变量的默认值为<code>false</code>。</li>
+<li>Go 语言中不允许将整型强制转换为布尔型.（C中可以 false=0，true=1）</li>
+<li>布尔型无法参与数值运算，也无法与其他类型进行转换。</li>
+</ol>
+<h3 id="3-5字符串转义符"><a href="#3-5字符串转义符" class="headerlink" title="3.5字符串转义符"></a>3.5字符串转义符</h3><p>Go 语言的字符串常见转义符包含回车、换行、单双引号、制表符等，如下表所示。</p>
+<table>
+<thead>
+<tr>
+<th align="center">转义符</th>
+<th align="center">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>\r</code></td>
+<td align="center">回车符（返回行首）</td>
+</tr>
+<tr>
+<td align="center"><code>\n</code></td>
+<td align="center">换行符（直接跳到下一行的同列位置）</td>
+</tr>
+<tr>
+<td align="center"><code>\t</code></td>
+<td align="center">制表符</td>
+</tr>
+<tr>
+<td align="center"><code>\&#39;</code></td>
+<td align="center">单引号</td>
+</tr>
+<tr>
+<td align="center"><code>\&quot;</code></td>
+<td align="center">双引号</td>
+</tr>
+<tr>
+<td align="center"><code>\\</code></td>
+<td align="center">反斜杠</td>
+</tr>
+</tbody></table>
+<p>举个例子，我们要打印一个Windows平台下的一个文件路径：</p>
+<pre><code class="hljs go"><span class="hljs-keyword">package</span> main
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">"fmt"</span>
+)
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> &#123;
+    fmt.Println(<span class="hljs-string">"str := \"c:\\Code\\lesson1\\go.exe\""</span>)
+&#125;</code></pre>
+
+<h3 id="3-5-1字符串的常用操作"><a href="#3-5-1字符串的常用操作" class="headerlink" title="3.5.1字符串的常用操作"></a>3.5.1字符串的常用操作</h3><table>
+<thead>
+<tr>
+<th align="center">方法</th>
+<th align="center">介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">len(str)</td>
+<td align="center">求长度</td>
+</tr>
+<tr>
+<td align="center">+或fmt.Sprintf</td>
+<td align="center">拼接字符串</td>
+</tr>
+<tr>
+<td align="center">strings.Split</td>
+<td align="center">分割</td>
+</tr>
+<tr>
+<td align="center">strings.contains</td>
+<td align="center">判断是否包含</td>
+</tr>
+<tr>
+<td align="center">strings.HasPrefix,strings.HasSuffix</td>
+<td align="center">前缀/后缀判断</td>
+</tr>
+<tr>
+<td align="center">strings.Index(),strings.LastIndex()</td>
+<td align="center">子串出现的位置</td>
+</tr>
+<tr>
+<td align="center">strings.Join(a[]string, sep string)</td>
+<td align="center">join操作</td>
+</tr>
+</tbody></table>
+<h3 id="3-6byte和rune类型"><a href="#3-6byte和rune类型" class="headerlink" title="3.6byte和rune类型"></a>3.6byte和rune类型</h3><p>组成每个字符串的元素叫做“字符”，可以通过遍历或者单个获取字符串元素获得字符。 字符用单引号（’）包裹起来，如：</p>
+<pre><code class="hljs go"><span class="hljs-keyword">var</span> a := <span class="hljs-string">'中'</span>
+<span class="hljs-keyword">var</span> b := <span class="hljs-string">'x'</span></code></pre>
+
+<p>Go 语言的字符有以下两种：</p>
+<ol>
+<li><code>uint8</code>类型，或者叫 byte 型，代表了<code>ASCII码</code>的一个字符。</li>
+<li><code>rune</code>类型，代表一个 <code>UTF-8字符</code>。</li>
+</ol>
+<p>当需要处理中文、日文或者其他复合字符时，则需要用到<code>rune</code>类型。<code>rune</code>类型实际是一个<code>int32</code>。</p>
+<p>Go 使用了特殊的 rune 类型来处理 Unicode，让基于 Unicode 的文本处理更为方便，也可以使用 byte 型进行默认字符串处理，性能和扩展性都有照顾。</p>
+<pre><code class="hljs go"><span class="hljs-comment">// 遍历字符串</span>
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">traversalString</span><span class="hljs-params">()</span></span> &#123;
+	s := <span class="hljs-string">"hello沙河"</span>
+	<span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; <span class="hljs-built_in">len</span>(s); i++ &#123; <span class="hljs-comment">//byte</span>
+		fmt.Printf(<span class="hljs-string">"%v(%c) "</span>, s[i], s[i])
+	&#125;
+	fmt.Println()
+	<span class="hljs-keyword">for</span> _, r := <span class="hljs-keyword">range</span> s &#123; <span class="hljs-comment">//rune</span>
+		fmt.Printf(<span class="hljs-string">"%v(%c) "</span>, r, r)
+	&#125;
+	fmt.Println()
+&#125;</code></pre>
+
+<p>输出：</p>
+<pre><code class="hljs bash">104(h) 101(e) 108(l) 108(l) 111(o) 230(æ) 178(²) 153() 230(æ) 178(²) 179(³) 
+104(h) 101(e) 108(l) 108(l) 111(o) 27801(沙) 27827(河)</code></pre>
+
+<p>因为UTF8编码下一个中文汉字由3~4个字节组成，所以我们不能简单的按照字节去遍历一个包含中文的字符串，否则就会出现上面输出中第一行的结果。</p>
+<p>字符串底层是一个byte数组，所以可以和<code>[]byte</code>类型相互转换。字符串是不能修改的 字符串是由byte字节组成，所以字符串的长度是byte字节的长度。 rune类型用来表示utf8字符，一个rune字符由一个或多个byte组成。</p>
+<h3 id="3-6-1修改字符串"><a href="#3-6-1修改字符串" class="headerlink" title="3.6.1修改字符串"></a>3.6.1修改字符串</h3><p>要修改字符串，需要先将其转换成<code>[]rune</code>或<code>[]byte</code>，完成后再转换为<code>string</code>。无论哪种转换，都会重新分配内存，并复制字节数组。</p>
+<pre><code class="hljs go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">changeString</span><span class="hljs-params">()</span></span> &#123;
+	s1 := <span class="hljs-string">"big"</span>
+	<span class="hljs-comment">// 强制类型转换</span>
+	byteS1 := []<span class="hljs-keyword">byte</span>(s1)
+	byteS1[<span class="hljs-number">0</span>] = <span class="hljs-string">'p'</span>
+	fmt.Println(<span class="hljs-keyword">string</span>(byteS1))
+
+	s2 := <span class="hljs-string">"白萝卜"</span>
+	runeS2 := []<span class="hljs-keyword">rune</span>(s2)
+	runeS2[<span class="hljs-number">0</span>] = <span class="hljs-string">'红'</span>
+	fmt.Println(<span class="hljs-keyword">string</span>(runeS2))
+&#125;</code></pre>
+
+
+
+<h2 id="3-7类型转换"><a href="#3-7类型转换" class="headerlink" title="3.7类型转换"></a>3.7类型转换</h2><p>Go语言中只有强制类型转换，没有隐式类型转换。该语法只能在两个类型之间支持相互转换的时候使用。</p>
+<p>强制类型转换的基本语法如下：</p>
+<pre><code class="hljs bash">T(表达式)</code></pre>
+
+<p>其中，T表示要转换的类型。表达式包括变量、复杂算子和函数返回值等.</p>
+<p>比如计算直角三角形的斜边长时使用math包的Sqrt()函数，该函数接收的是float64类型的参数，而变量a和b都是int类型的，这个时候就需要将a和b强制类型转换为float64类型。</p>
+<pre><code class="hljs go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">sqrtDemo</span><span class="hljs-params">()</span></span> &#123;
+	<span class="hljs-keyword">var</span> a, b = <span class="hljs-number">3</span>, <span class="hljs-number">4</span>
+	<span class="hljs-keyword">var</span> c <span class="hljs-keyword">int</span>
+	<span class="hljs-comment">// math.Sqrt()接收的参数是float64类型，需要强制转换</span>
+	c = <span class="hljs-keyword">int</span>(math.Sqrt(<span class="hljs-keyword">float64</span>(a*a + b*b)))
+	fmt.Println(c)
+&#125;</code></pre>
+
 
             </article>
             <hr>
