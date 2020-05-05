@@ -107,6 +107,15 @@
               关于</a>
           </li>
         
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/links/">
+              <i class="iconfont icon-link-fill"></i>
+              友链</a>
+          </li>
+        
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
@@ -180,6 +189,12 @@
       <div class="container nopadding-md" id="board-ctn">
         <div class="py-5" id="board">
           <div class="post-content mx-auto" id="post">
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：2 小时前
+                
+              </p>
             
             <article class="markdown-body">
               <meta name="referrer" content="no-referrer">
@@ -358,13 +373,11 @@
 <hr>
 <hr>
 <hr>
-<h2 id="数据挖掘："><a href="#数据挖掘：" class="headerlink" title="==数据挖掘：=="></a>==数据挖掘：==</h2><h3 id="https-zhuanlan-zhihu-com-p-99363553"><a href="#https-zhuanlan-zhihu-com-p-99363553" class="headerlink" title="https://zhuanlan.zhihu.com/p/99363553"></a><a href="https://zhuanlan.zhihu.com/p/99363553" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/99363553</a></h3><h3 id="https-zhuanlan-zhihu-com-p-99167118"><a href="#https-zhuanlan-zhihu-com-p-99167118" class="headerlink" title="https://zhuanlan.zhihu.com/p/99167118"></a><a href="https://zhuanlan.zhihu.com/p/99167118" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/99167118</a></h3><div class="note note-success">
+<h2 id="数据挖掘："><a href="#数据挖掘：" class="headerlink" title="==数据挖掘：=="></a>==数据挖掘：==</h2><h3 id="https-zhuanlan-zhihu-com-p-99363553"><a href="#https-zhuanlan-zhihu-com-p-99363553" class="headerlink" title="https://zhuanlan.zhihu.com/p/99363553"></a><a href="https://zhuanlan.zhihu.com/p/99363553" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/99363553</a></h3><h3 id="https-zhuanlan-zhihu-com-p-99167118"><a href="#https-zhuanlan-zhihu-com-p-99167118" class="headerlink" title="https://zhuanlan.zhihu.com/p/99167118"></a><a href="https://zhuanlan.zhihu.com/p/99167118" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/99167118</a></h3><h2 id="md的方式添加标签："><a href="#md的方式添加标签：" class="headerlink" title="#md的方式添加标签："></a>#md的方式添加标签：</h2><div class="note note-success">
             <h3 id="good-Bye"><a href="#good-Bye" class="headerlink" title="good Bye~"></a>good Bye~</h3>
           </div>
 
-
-
-<p class="note note-primary">good Bye~</p>
+<h2 id="HTML方式："><a href="#HTML方式：" class="headerlink" title="#HTML方式："></a>#HTML方式：</h2><p class="note note-primary">good Bye~</p>
             </article>
             <hr>
             <div>
@@ -373,7 +386,7 @@
                 
               </div>
               
-                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+                <p class="note note-warning">希望您喜欢我的文章~_~ 或者移步到<a href="https://github.com/1097872822" target="_blank" rel="nofollow noopener noopener">  我的github  </a> 。转载请注明出处！</p>
               
               
                 <div class="post-prevnext row">
@@ -400,6 +413,25 @@
               <div class="comments" id="comments">
                 
                 
+  <div id="lv-container" data-id="city" data-uid="MTAyMC80OTk4Mi8yNjQ3Mw">
+    <script type="text/javascript">
+      (function (d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+
+        if (typeof LivereTower === 'function') {
+          return;
+        }
+
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.defer = true;
+
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+    <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+  </div>
+
 
               </div>
             
@@ -482,7 +514,10 @@
 
   
 
-  <footer class="mt-5">
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<footer class="mt-5">
   <div class="text-center py-3">
     <div>
       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
@@ -499,6 +534,32 @@
 </footer>
 
 <!-- SCRIPTS -->
+
+<!-- 网站运行时间的设置 -->
+<span id="timeDate">载入天数...</span>
+<span id="times">载入时分秒...</span> 
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("04/20/2020 13:14:00");//此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "<br />本站已安全运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+setInterval("createtime()",250);
+</script>
+
+
+
+
+
+
 <script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
 <script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
 <script  src="/js/main.js" ></script>
@@ -654,5 +715,7 @@
 
 
 
-</body>
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
