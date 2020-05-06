@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>RRW_BLOG</title>
+  
+  <subtitle>Welcome to my Blog！</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://1097872822.github.io/"/>
+  <updated>2020-05-06T12:31:49.687Z</updated>
+  <id>http://1097872822.github.io/</id>
+  
+  <author>
+    <name>Friend_Rrw</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Data Warehouse</title>
+    <link href="http://1097872822.github.io/2020/05/02/data-warehouse/"/>
+    <id>http://1097872822.github.io/2020/05/02/data-warehouse/</id>
+    <published>2020-05-02T15:26:27.000Z</published>
+    <updated>2020-05-06T12:31:49.687Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;数据仓库-：&quot;&gt;&lt;a href=&quot;#数据仓库-：&quot; class=&quot;headerlink&quot; title=&quot;==数据仓库==：&quot;&gt;&lt;/a&gt;==数据仓库==：&lt;/h3&gt;&lt;h4
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Go语言</title>
+    <link href="http://1097872822.github.io/2018/09/07/go-yu-yan/"/>
+    <id>http://1097872822.github.io/2018/09/07/go-yu-yan/</id>
+    <published>2018-09-07T01:25:00.000Z</published>
+    <updated>2020-05-06T12:32:50.825Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;一、GO入门&quot;&gt;&lt;a href=&quot;#一、GO入门&quot; class=&quot;headerlink&quot; title=&quot;一、GO入门&quot;&gt;&lt;/a&gt;一、GO入门&lt;/h1&gt;&lt;h2 id=&quot;url-：老师博客&quot;&gt;&lt;a href=&quot;#url-：老师博客&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
