@@ -97,17 +97,6 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>归档</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
     <a href="/" class="waves-effect waves-light">
 
       
@@ -153,23 +142,46 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
     <a href="/galleries" class="waves-effect waves-light">
       
       <i class="fas fa-image" style="zoom: 0.6;"></i>
       
       <span>相册</span>
     </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-list" style="zoom: 0.6;"></i>
+      
+      <span>Medias</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/movies">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Movies</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/books">
+          
+          <i class="fas fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Books</span>
+        </a>
+      </li>
+      
+    </ul>
     
   </li>
   
@@ -245,17 +257,6 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			归档
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
 		<a href="javascript:;">
 			
 				<i class="fa-fw fas fa-address-card"></i>
@@ -302,23 +303,47 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
 		<a href="/galleries" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-image"></i>
 			
 			相册
 		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-list"></i>
+			
+			Medias
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/movies " style="margin-left:50px">
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:28px" ></i>
+			      
+		          <span>Movies</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/books " style="margin-left:50px">
+				  
+				   <i class="fa fas fa-book" style="position: absolute;left:28px" ></i>
+			      
+		          <span>Books</span>
+                  </a>
+                </li>
+              
+            </ul>
           
         </li>
         
@@ -628,7 +653,7 @@ go build<span aria-hidden="true" class="line-numbers-rows"><span></span><span></
     fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>m<span class="token punctuation">,</span> n<span class="token punctuation">)</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
-<h5 id="2-3-iota"><a href="#2-3-iota" class="headerlink" title="2.3   iota"></a>2.3   <a href><strong>iota</strong></a></h5></blockquote>
+<h5 id="2-3-iota"><a href="#2-3-iota" class="headerlink" title="2.3   iota"></a>2.3   <a href=""><strong>iota</strong></a></h5></blockquote>
 <p><code>iota</code>是go语言的常量计数器，只能在常量的表达式中使用。</p>
 <p><code>iota</code>在const关键字出现时将被重置为0。const中每新增一行常量声明将使<code>iota</code>计数一次(iota可理解为const语句块中的行索引)。 使用iota能简化定义，在定义枚举时很有用。</p>
 <p>举个例子：</p>
@@ -750,11 +775,11 @@ fmt<span class="token punctuation">.</span><span class="token function">Println<
 <td align="center">制表符</td>
 </tr>
 <tr>
-<td align="center"><code>\&#39;</code></td>
+<td align="center"><code>\'</code></td>
 <td align="center">单引号</td>
 </tr>
 <tr>
-<td align="center"><code>\&quot;</code></td>
+<td align="center"><code>\"</code></td>
 <td align="center">双引号</td>
 </tr>
 <tr>
@@ -858,7 +883,25 @@ fmt<span class="token punctuation">.</span><span class="token function">Println<
     c <span class="token operator">=</span> <span class="token function">int</span><span class="token punctuation">(</span>math<span class="token punctuation">.</span><span class="token function">Sqrt</span><span class="token punctuation">(</span><span class="token function">float64</span><span class="token punctuation">(</span>a<span class="token operator">*</span>a <span class="token operator">+</span> b<span class="token operator">*</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
     fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
             <hr/>
 
@@ -1353,7 +1396,7 @@ fmt<span class="token punctuation">.</span><span class="token function">Println<
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/05/02/data-warehouse/">
+                <a href="/2019/02/02/data-warehouse/">
                     <div class="card-image">
                         
                         
@@ -1370,12 +1413,12 @@ fmt<span class="token punctuation">.</span><span class="token function">Println<
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-02
+                            <i class="far fa-clock fa-fw icon-date"></i>2019-02-02
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            Friend_Rrw
+                            阮荣望
                             
                         </span>
                     </div>
@@ -1611,7 +1654,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">8.9k</span>&nbsp;字
+                class="white-color">9k</span>&nbsp;字
             
             
             
