@@ -108,12 +108,35 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/about" class="waves-effect waves-light">
+    <a href="/" class="waves-effect waves-light">
+
       
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      <i class="fas fa-address-card" style="zoom: 0.6;"></i>
       
       <span>关于</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
     </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/about">
+          
+          <i class="fas fa-user-circle" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>关于我</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/aboutme">
+          
+          <i class="fa fa-user-secret" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Another</span>
+        </a>
+      </li>
+      
+    </ul>
     
   </li>
   
@@ -143,7 +166,7 @@
     
     <a href="/galleries" class="waves-effect waves-light">
       
-      <i class="fa-photo" style="zoom: 0.6;"></i>
+      <i class="fas fa-image" style="zoom: 0.6;"></i>
       
       <span>相册</span>
     </a>
@@ -233,12 +256,36 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/about" class="waves-effect waves-light">
+		<a href="javascript:;">
 			
-			    <i class="fa-fw fas fa-user-circle"></i>
+				<i class="fa-fw fas fa-address-card"></i>
 			
 			关于
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
 		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/about " style="margin-left:50px">
+				  
+				   <i class="fa fas fa-user-circle" style="position: absolute;left:28px" ></i>
+			      
+		          <span>关于我</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/aboutme " style="margin-left:50px">
+				  
+				   <i class="fa fa fa-user-secret" style="position: absolute;left:28px" ></i>
+			      
+		          <span>Another</span>
+                  </a>
+                </li>
+              
+            </ul>
           
         </li>
         
@@ -268,7 +315,7 @@
 	  
 		<a href="/galleries" class="waves-effect waves-light">
 			
-			    <i class="fa-fw fa-photo"></i>
+			    <i class="fa-fw fas fa-image"></i>
 			
 			相册
 		</a>
@@ -351,93 +398,48 @@
 </header>
 
     <link rel="stylesheet" href="/css/gallery.css">
+<link type="text/css" href="/libs/fancybox/jquery.fancybox.css" rel="stylesheet">
+<link type="text/css" href="/libs/justifiedGallery/justifiedGallery.min.css" rel="stylesheet">
 
-<div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                Welcome to my Blog！
-                
-            </div>
 
-            <div class="description center-align">
-                
--                <span id="subtitle"></span>
--                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
--                <script>
--                    var typed = new Typed("#subtitle", {
--                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
--                        startDelay: 300,
--                        typeSpeed: 100,
--                        loop: true,
--                        backSpeed: 50,
--                        showCursor: true
--                    });
--                </script>
-+           <span id="jinrishici-sentence"></span>
-+                  <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-                
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">chongqing</h1>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 
+
+<div class="container">
+    <div class="photo-wrapper">
+        
+            <div class="waterfall" id="encrypt-blog">
+                <a href="http://q9qsi0mev.bkt.clouddn.com/chongqing/cq01.jpg" target="_blank"     class="photo-item" rel="example_group noopener"     data-fancybox="images">      <img src="http://q9qsi0mev.bkt.clouddn.com/chongqing/cq01.jpg"       alt=chongqing/cq01.jpg>
+    </a><a href="http://q9qsi0mev.bkt.clouddn.com/chongqing/cq02.jpg" target="_blank"     class="photo-item" rel="example_group noopener"     data-fancybox="images">      <img src="http://q9qsi0mev.bkt.clouddn.com/chongqing/cq02.jpg"       alt=chongqing/cq02.jpg>
+    </a><a href="http://q9qsi0mev.bkt.clouddn.com/chongqing/cq03.jpg" target="_blank"     class="photo-item" rel="example_group noopener"     data-fancybox="images">      <img src="http://q9qsi0mev.bkt.clouddn.com/chongqing/cq03.jpg"       alt=chongqing/cq03.jpg>
+    </a><a href="http://q9qsi0mev.bkt.clouddn.com/chongqing/cq04.jpg" target="_blank"     class="photo-item" rel="example_group noopener"     data-fancybox="images">      <img src="http://q9qsi0mev.bkt.clouddn.com/chongqing/cq04.jpg"       alt=chongqing/cq04.jpg>
+    </a>
+            </div>
+        
+    </div>
+</div>
+
+<script src="/libs/fancybox/fancybox.js"></script>
+<script src="/libs/justifiedGallery/justifiedGallery.min.js"></script>
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/4.jpg)');
+
+  $("a[rel=example_group]").fancybox();
+  $("#encrypt-blog").justifiedGallery({margins: 5, rowHeight: 150});
+
 </script>
 
-
-    </div>
-</div>
-
-<main class="content">
-    <div class="container">
-        
-        
-        <div class="gallery-wrapper row">
-            
-            
-            <div class="col s6 m4 l4 xl3 gallery-box">
-                <a href="./wuhan" class="gallery-item" data-aos="zoom-in-up">
-                    <div class="gallery-cover-box" style="background-image: url(http://图片地址.com/wuhan/wh01.jpg);">
-                    </div>
-                    <p class="gallery-name">
-                        wuhan
-                    </p>
-                </a>
-            </div>
-            
-            
-            <div class="col s6 m4 l4 xl3 gallery-box">
-                <a href="./chongqing" class="gallery-item" data-aos="zoom-in-up">
-                    <div class="gallery-cover-box" style="background-image: url(http://图片地址.com/chongqing/cq01.jpg);">
-                    </div>
-                    <p class="gallery-name">
-                        chongqing
-                    </p>
-                </a>
-            </div>
-            
-            
-            <div class="col s6 m4 l4 xl3 gallery-box">
-                <a href="./yichang" class="gallery-item" data-aos="zoom-in-up">
-                    <div class="gallery-cover-box" style="background-image: url(http://图片地址.com/yichang/school01.jpg);">
-                    </div>
-                    <p class="gallery-name">
-                        yichang
-                    </p>
-                </a>
-            </div>
-            
-        </div>
-        
-    </div>
-</main>
 
     <footer class="page-footer bg-color">
     
