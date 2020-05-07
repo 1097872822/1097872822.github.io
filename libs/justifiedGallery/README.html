@@ -1,0 +1,282 @@
+<div align="center">
+  <a href="http://miromannino.github.io/Justified-Gallery/" target="_blank">
+    <img src="https://raw.github.com/miromannino/Justified-Gallery/gh-imgs/jgcover.png" />
+  </a>
+</div>
+
+<p><strong>Justified Gallery is a JavaScript library that allows you to create an high quality justified gallery of images.</strong></p>
+<p><a href="https://badge.fury.io/bo/justifiedGallery" target="_blank" rel="noopener"><img src="https://badge.fury.io/bo/justifiedGallery.svg" alt="Bower version"></a><br><a href="https://badge.fury.io/js/justifiedGallery" target="_blank" rel="noopener"><img src="https://badge.fury.io/js/justifiedGallery.svg" alt="npm version"></a></p>
+<p>This is a common problem for people who create websites: you have a series of images to display, but you are not sure how to arrange them in an elegant way. Important websites such as 500px, Flickr, or Google display images in an excellent way, justifying them similarly to brick wall. Justified Gallery will give you the power to do that too.</p>
+<p>Justified Gallery is a professional and open source library that even 500px, one of the best photography social network, chose for displaying their images!</p>
+<div style="text-align: center; font-size: 110%;">
+    <a href="http://miromannino.github.io/Justified-Gallery/" target="_blank">Official project page</a>
+</div>
+
+<h2 id="Release-History"><a href="#Release-History" class="headerlink" title="Release History"></a>Release History</h2><h3 id="3-7"><a href="#3-7" class="headerlink" title="3.7"></a>3.7</h3><ul>
+<li>Compatible with AMD and CommonJS formats using Universal Module Definition pattern (examples provided for Webpack, Browserify, and AMD/RequireJS)</li>
+<li>$.prop() changed to $.attr() because it was creating problems with Foundation</li>
+<li>The library could now be used without necessarily defining it as jQuery plugin. But it still requires jQuery to provide a better browser compatibility.</li>
+</ul>
+<h3 id="3-6-5"><a href="#3-6-5" class="headerlink" title="3.6.5"></a>3.6.5</h3><ul>
+<li>For more flexibility, option imgSelector to select the image, given an image entry (e.g. a figure or a div)</li>
+<li>$.attr() changed to $.prop() for better compatibility</li>
+<li>Right to left option</li>
+<li>Prevent gallery height collapse when the page is resized and keep the scroll position</li>
+<li>Avoid width check in case the gallery is not visible</li>
+</ul>
+<h3 id="3-6-4"><a href="#3-6-4" class="headerlink" title="3.6.4"></a>3.6.4</h3><ul>
+<li>semplified the possibility to have a gallery of <code>&lt;figure&gt;</code>. </li>
+</ul>
+<h3 id="3-6-3"><a href="#3-6-3" class="headerlink" title="3.6.3"></a>3.6.3</h3><ul>
+<li>Added in thumbnailPath an extra parameter which specify the current image. In this way properties of that image could<br>be read</li>
+<li>Fixed bugs for filter when used specifying a function</li>
+<li>Fixed bugs for filter when norewind is used</li>
+<li>Performance improvements in case of norewind</li>
+<li>Changed the selector behaviour. Only direct children of the gallery can be choose as gallery entry.</li>
+<li>Fixed bug for maxRowHeight</li>
+</ul>
+<h3 id="3-6-2"><a href="#3-6-2" class="headerlink" title="3.6.2"></a>3.6.2</h3><ul>
+<li>cssAnimation = true as default. It’s time to move to the future and leave IE in the past.</li>
+<li>fixed cssAnimation</li>
+<li>scrollbar existence check to avoid image resizing flickering</li>
+<li>The boxes could now be configured to have a background color to be visible with waitThumbnailsLoad = false.</li>
+<li>removed the <code>fixedHeight</code> option since now this behaviour can be replicated using <code>maxRowHeight</code>.</li>
+<li>The last row height will be calculated as the average row height of all the other rows. Before the last row height<br>was always following the <code>rowHeight</code> option, that could be smaller than the effective height of all the other rows.<br>For example: a gallery of images of 100x100px in a container of 950px, where rowHeight = 100. That gallery would<br>contain 9 pictures for each row, and the extra space used for justification. Each row will have approximately an<br>height of 105px after the justification. In this example the last row height would be 105px, where in the past<br>it would usually be 100px if not justified.</li>
+<li>other bugfixes</li>
+</ul>
+<h3 id="3-6-1"><a href="#3-6-1" class="headerlink" title="3.6.1"></a>3.6.1</h3><ul>
+<li><p>bugfixes</p>
+</li>
+<li><p>lastRow option can be ‘nojustify’, which is the same as ‘left’, or it can be ‘justify’, ‘center’, ‘right’ or ‘hide’.</p>
+</li>
+<li><p>refreshSensitivity option, to configure the change in width allowed (in px) without re-building the gallery</p>
+</li>
+<li><p>thumbnailPath to configure JG with a custom thumbnail selector,<br>e.g. we want to do select the correct thumbnail changing only a suffix of the current filename</p>
+<pre><code>$(&quot;#myGallery&quot;).justifiedGallery({
+    thumbnailPath: function (currentPath, width, height) {
+        if (Math.max(width, height) &lt; 250) {
+            return currentPath.replace(/(.*)(_[a-z]+)(\..*)/, &quot;$1_small$2&quot;);
+        } else {
+            return currentPath.replace(/(.*)(_[a-z]+)(\..*)/, &quot;$1_medium$2&quot;);
+        }
+    }
+});</code></pre></li>
+</ul>
+<h3 id="3-6"><a href="#3-6" class="headerlink" title="3.6"></a>3.6</h3><ul>
+<li><p>Sort (works also with infinite scroll)</p>
+</li>
+<li><p>Filter (works also with infinite scroll)</p>
+</li>
+<li><p>Randomize images now works also with infinite scroll</p>
+</li>
+<li><p>Text entries (i.e. without images) support</p>
+</li>
+<li><p>Destroy method</p>
+</li>
+<li><p>maxRowHeight could be also a percentage</p>
+</li>
+<li><p>configurable sizeRangeSuffixes.<br>e.g. to have only thumbnails and big images it could be:</p>
+<pre><code>sizeRangeSuffixes : {
+    500: &apos;_t&apos;,
+    2000: &apos;_m&apos;
+}</code></pre></li>
+<li><p>Configurable entry selector</p>
+</li>
+<li><p>Code refactoring</p>
+</li>
+</ul>
+<details>
+    <summary>Older versions</summary>
+
+<h3 id="3-5-4"><a href="#3-5-4" class="headerlink" title="3.5.4"></a>3.5.4</h3><ul>
+<li>Added the border option</li>
+<li>Fixed some problems with waitThumbnailsLoad and infinite scroll</li>
+</ul>
+<h3 id="3-5"><a href="#3-5" class="headerlink" title="3.5"></a>3.5</h3><ul>
+<li><p>The default suffixes are all empty, to be simpler to understand. To have the previous suffixes,<br>the following settings can be used:</p>
+<pre><code>sizeRangeSuffixes : {
+    &apos;lt100&apos;: &apos;_t&apos;,
+    &apos;lt240&apos;: &apos;_m&apos;,
+    &apos;lt320&apos;: &apos;_n&apos;,
+    &apos;lt500&apos;: &apos;&apos;,
+    &apos;lt640&apos;: &apos;_z&apos;,
+    &apos;lt1024&apos;: &apos;_b&apos;
+}</code></pre></li>
+<li><p>Now is possible to have entries with the structure:</p>
+<pre><code>&lt;div&gt;
+    &lt;a href=&quot;...&quot;&gt;
+        &lt;img src=&quot;...&quot; /&gt;
+    &lt;/a&gt;
+    &lt;div class=&quot;caption&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre></li>
+<li><p>Fixed margins</p>
+</li>
+<li><p>The border of the entire gallery can be customized</p>
+</li>
+<li><p>Corrected bugs for the callbacks when waitThumbnailsLoad = false</p>
+</li>
+</ul>
+<h3 id="3-4"><a href="#3-4" class="headerlink" title="3.4"></a>3.4</h3><ul>
+<li>Performance improvements<ul>
+<li>In presence of width and height attributes in thumbnails, and with the option<br>‘waitThumbnailsLoad’, the layout is immediately built, and the thumbnails will appear randomly<br>while they are loaded.</li>
+<li>Other code refactorings to be more performant</li>
+</ul>
+</li>
+<li>With nojustify, if there is only a row, it doesn’t justify anything. The previous behaviour seems<br>too like a bug than a feature.</li>
+<li>Infinite scroll example with plain javascript to be more understandable.</li>
+<li>Fixes some bugs with infinite scroll</li>
+</ul>
+<h3 id="3-3"><a href="#3-3" class="headerlink" title="3.3"></a>3.3</h3><ul>
+<li><p>No more crops</p>
+<ul>
+<li>Removed some floating point approximations that caused some small crops</li>
+</ul>
+</li>
+<li><p>Initial opacity settings for the caption to allow them to be always visible</p>
+<ul>
+<li>Can be also configured changing the less file, if one prefers CSS animations</li>
+</ul>
+</li>
+<li><p>All caption settings in a single object to be more compact</p>
+<pre><code>captionSettings : { //ignored with css animations
+    animationDuration : 500,
+    visibleOpacity : 0.7,
+    nonVisibleOpacity : 0.0
+},</code></pre></li>
+<li><p>Justification formulas refactoring to be more maintainable</p>
+</li>
+</ul>
+<h3 id="3-2"><a href="#3-2" class="headerlink" title="3.2"></a>3.2</h3><ul>
+<li>A gallery of <code>div</code> can be used instead of <code>a</code></li>
+<li>Fixed errors for the last rows</li>
+<li>Option to use only css animations (i.e <code>cssAnimation</code>)</li>
+<li>Without css animations<ul>
+<li>Configurable caption fadein/fadeout time (i.e. <code>captionsAnimationDuration</code>)</li>
+<li>Configurable caption final opacity (i.e. <code>captionsVisibleOpacity</code>)</li>
+<li>Configurable images fadein time (i.e. <code>imagesAnimationDuration</code>)</li>
+</ul>
+</li>
+<li>Configurable treshold that decides to justify the row also in presence of nojustify (i.e. <code>justifyThreshold</code>)</li>
+</ul>
+<h3 id="3-1"><a href="#3-1" class="headerlink" title="3.1"></a>3.1</h3><ul>
+<li>Improved the algorithm to reduce the image crops</li>
+<li>Fixed errors with some jQuery versions</li>
+<li>Fixed errors with fixed height</li>
+<li>Settings checks and parsing</li>
+<li>Added event jg.rowflush</li>
+</ul>
+<h3 id="3-0"><a href="#3-0" class="headerlink" title="3.0"></a>3.0</h3><ul>
+<li>Totally rewritten!</li>
+<li>Row by row loading<ul>
+<li>The plugin doesn’t wait that all the gallery thumbnails are loaded<ul>
+<li>A row is printed when the its thumbnails are available</li>
+<li>Non-blocking layout creation</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>No more white spaces (If the gallery needs to load a bigger image, it first show the smaller and then replace it with the bigger)</li>
+<li>Improved the algorithm for a better result<ul>
+<li>No more white pixels at the end of a row (bugfix)</li>
+<li>Reduced a lot the image crops<ul>
+<li>Vertical centering</li>
+<li>Proportional images enlargement looking the image aspect ratio</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Improved the algorithm efficiency<ul>
+<li>No more extra tags or new elements added to create the layout</li>
+<li>All the images remain in the DOM, they aren’t deleted or created<ul>
+<li>Hence, each tag remains in the links and in the images</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Added <code>maxRowHeight</code> option</li>
+<li>Custom captions</li>
+<li>Thumbnails randomization (<code>randomize</code> option)</li>
+<li>Statefulness<ul>
+<li>can be called again changing only some settings</li>
+<li>can be called again to update the layout (after add or remove of images)</li>
+</ul>
+</li>
+<li>Infinite scroll capable</li>
+<li>Improved last row behavior<ul>
+<li>Last row option changed<ul>
+<li><code>justifyLastRow</code> setting has been renamed to <code>lastRow</code>, and it accepts: <code>&#39;justify&#39;</code>, <code>&#39;nojustify&#39;</code>, <code>&#39;hide&#39;</code>.</li>
+</ul>
+</li>
+<li>Option to hide the row if it is incomplete and cannot be justified</li>
+<li>The plugin can justify also with <code>lastRow = &#39;nojustify&#39;</code>, if the free space is small.</li>
+</ul>
+</li>
+<li>Silent error handling<ul>
+<li>If a thumbnail doesn’t exists, it is ignored in the layout (hided)</li>
+<li>If the plugin needs an inexistent thumbnail, it maintains the previous one</li>
+<li>Errors are still visible in the console</li>
+</ul>
+</li>
+<li>Loading spinner<ul>
+<li>Visible when a new row needs to be loaded</li>
+<li>Pure CSS spinner</li>
+<li>Configurable changing the CSS/Less</li>
+</ul>
+</li>
+<li>Project structure<ul>
+<li>Grunt to manage the build</li>
+<li>Less</li>
+<li>Tests</li>
+<li>Javascript and CSS validation</li>
+<li>CSS filename changed to be more standard</li>
+</ul>
+</li>
+<li>License changed to MIT</li>
+<li>Improved the gallery size check to be less invasive</li>
+<li>Fixed lightbox removal when the page is resized</li>
+</ul>
+<h3 id="2-1"><a href="#2-1" class="headerlink" title="2.1"></a>2.1</h3><ul>
+<li>Setting removed: ‘usedSizeRange’, now the plugin do it automatically</li>
+<li>Setting behavior changed: ‘extension’, now it accept a regular expression. The old behavior still works, but is not safe.</li>
+<li>New behavior: if an image defines the attribute <code>data-safe-src</code>, this is choice, no matter what the src attribute is. This can be used to avoid the problems with Photon or other services that resize the images, changing the image <code>src</code>s.</li>
+</ul>
+<h3 id="2-0"><a href="#2-0" class="headerlink" title="2.0"></a>2.0</h3><ul>
+<li>Setting removed: ‘lightbox’, now can be done simply with the onComplete callback.</li>
+<li>Added Setting: ‘rel’ to change all the links <code>rel</code> attribute.</li>
+<li>Added Setting: ‘target’ to change all the links <code>target</code> attribute.</li>
+<li>Setting name changed: ‘complete’ to ‘onComplete’.</li>
+<li>Setting name changed: ‘sizeSuffixes’ to ‘sizeRangeSuffixes’.</li>
+<li>Setting name changed: ‘usedSuffix’ to ‘usedSizeRange’.</li>
+<li>Added the CSS for the div that shows the Justified Gallery errors. Now can be changed, or hided.</li>
+</ul>
+</details>
+
+<h2 id="Contributing"><a href="#Contributing" class="headerlink" title="Contributing"></a>Contributing</h2><h3 id="Important-notes"><a href="#Important-notes" class="headerlink" title="Important notes"></a>Important notes</h3><p>Please don’t edit files in the <code>dist</code> subdirectory as they are generated via Grunt. You’ll find source code in the <code>src</code> subdirectory.</p>
+<h4 id="Code-style"><a href="#Code-style" class="headerlink" title="Code style"></a>Code style</h4><p>Regarding code style like indentation and whitespace, <strong>follow the conventions you see used in the source already.</strong></p>
+<h3 id="Modifying-the-code"><a href="#Modifying-the-code" class="headerlink" title="Modifying the code"></a>Modifying the code</h3><ul>
+<li><p>Prerequisites:</p>
+<ul>
+<li>Ensure that you have the latest <a href="http://nodejs.org/" target="_blank" rel="noopener">Node.js</a> and <a href="http://npmjs.org/" target="_blank" rel="noopener">npm</a> installed.</li>
+<li>Test that Grunt’s CLI is installed by running <code>grunt --version</code>.  If the command isn’t found, run <code>npm install -g grunt-cli</code>.  For more information about installing Grunt, see the <a href="http://gruntjs.com/getting-started" target="_blank" rel="noopener">getting started guide</a>.</li>
+<li>Ensure that you have Bower installed. If not, install it using <code>npm install -g bower</code>.</li>
+</ul>
+</li>
+<li><p>Steps:</p>
+<ul>
+<li>Fork and clone this repository.</li>
+<li>Open a terminal and change the current directory to the cloned folder.</li>
+<li>Run <code>npm install</code> to install all dependencies (including bower and Grunt).</li>
+<li>Run <code>bower install</code> to install all the dependencies needed for the tests.</li>
+<li>Run <code>grunt debug</code> to build the library only for testing (debug mode).</li>
+<li>Run <code>grunt</code> to build this project in release mode.</li>
+</ul>
+</li>
+</ul>
+<h3 id="Submitting-pull-requests"><a href="#Submitting-pull-requests" class="headerlink" title="Submitting pull requests"></a>Submitting pull requests</h3><ul>
+<li>Create a new branch, please don’t work in your <code>master</code> branch directly.</li>
+<li>Add failing tests for the change you want to make.</li>
+<li>Fix stuff.</li>
+<li>Ensure that the written tests don’t fail anymore, as well as the other tests.</li>
+<li>Update the documentation to reflect any changes.</li>
+<li>Push to your fork and submit a pull request.</li>
+</ul>
