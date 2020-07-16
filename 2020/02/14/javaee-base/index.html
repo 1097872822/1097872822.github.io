@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Go语言, Friend_Rrw">
+    <meta name="keywords" content="Javaee-base, Friend_Rrw">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Go语言 | RRW_BLOG</title>
+    <title>Javaee-base | RRW_BLOG</title>
     <link rel="icon" type="image/png" href="/medias/logo.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -426,12 +426,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Go语言</h1>
+                    <h1 class="description center-align post-title">Javaee-base</h1>
                 </div>
             </div>
         </div>
@@ -558,7 +558,7 @@
             
             <div class="text-color" align=center style="font-size:large">
                 
-                    <i class="far fa-square"></i> 阮荣望
+                    <i class="far fa-square"></i> Friend_Rrw
                 
             </div>
 
@@ -566,28 +566,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2018-09-07
+                    2020-02-14
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-06
+                    2020-07-14
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.1k
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    8 分
+                    5 分
                 </div>
                 
 
@@ -602,288 +602,210 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="一、GO入门"><a href="#一、GO入门" class="headerlink" title="一、GO入门"></a>一、GO入门</h1><h2 id="url-：老师博客"><a href="#url-：老师博客" class="headerlink" title="url ：老师博客"></a>url ：<a href="https://www.liwenzhou.com/posts/Go/go_menu/" target="_blank" rel="noopener">老师博客</a></h2><h2 id="1、下载-查看版本："><a href="#1、下载-查看版本：" class="headerlink" title="1、下载/查看版本："></a>1、下载/查看版本：</h2><p><img src="/2018/09/07/go-yu-yan/image-20200405150456539.png" alt="image-20200405150456539"></p>
-<h2 id="2、配置Go-path："><a href="#2、配置Go-path：" class="headerlink" title="2、配置Go path："></a>2、配置Go path：</h2><p><img src="/2018/09/07/go-yu-yan/image-20200405150944616.png" alt="image-20200405150456539"></p>
-<p><img src="/2018/09/07/go-yu-yan/image-20200405151546195.png" alt="image-20200405152603484"></p>
-<p><img src="/2018/09/07/go-yu-yan/image-20200405152603484.png" alt="image-20200405152603484"></p>
-<p><img src="/2018/09/07/go-yu-yan/image-20200405152726411.png" alt="image-20200405152726411"></p>
-<h2 id="3、安装编译器VS-CODE"><a href="#3、安装编译器VS-CODE" class="headerlink" title="3、安装编译器VS CODE"></a>3、安装编译器VS CODE</h2><h4 id="VS-Code-官方下载地址-：https-code-visualstudio-com-Download"><a href="#VS-Code-官方下载地址-：https-code-visualstudio-com-Download" class="headerlink" title="VS Code[官方下载地址] ：https://code.visualstudio.com/Download"></a>VS Code[官方下载地址] ：<a href="https://code.visualstudio.com/Download" target="_blank" rel="noopener">https://code.visualstudio.com/Download</a></h4><p><img src="/2018/09/07/go-yu-yan/image-20200405154556776.png" alt="image-20200405154556776"></p>
-<p><img src="/2018/09/07/go-yu-yan/image-20200405154853020.png" alt="image-20200405154853020"></p>
-<h4 id="工具包下载："><a href="#工具包下载：" class="headerlink" title="工具包下载："></a>工具包下载：</h4><h5 id="1、先在cmd里敲一下："><a href="#1、先在cmd里敲一下：" class="headerlink" title="1、先在cmd里敲一下："></a>1、先在cmd里敲一下：</h5><pre class="line-numbers language-bash"><code class="language-bash">go <span class="token function">env</span> -w GOPROXY<span class="token operator">=</span>https://goproxy.cn,direct<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h5 id="2、操作下："><a href="#2、操作下：" class="headerlink" title="2、操作下："></a>2、操作下：</h5><p><img src="/2018/09/07/go-yu-yan/image-20200405163005796.png" alt="image-20200405163005796"></p>
-<h5 id="或者-：-https-www-cnblogs-com-xll970105-p-11906899-html"><a href="#或者-：-https-www-cnblogs-com-xll970105-p-11906899-html" class="headerlink" title="或者 ：(https://www.cnblogs.com/xll970105/p/11906899.html)"></a>或者 ：(<a href="https://www.cnblogs.com/xll970105/p/11906899.html" target="_blank" rel="noopener">https://www.cnblogs.com/xll970105/p/11906899.html</a>)</h5><h5 id="完成后："><a href="#完成后：" class="headerlink" title="完成后："></a>完成后：</h5><p><img src="/2018/09/07/go-yu-yan/image-20200405163355279.png" alt="image-20200405163355279"></p>
-<p><img src="/2018/09/07/go-yu-yan/image-20200405183401842.png" alt="image-20200405183401842"></p>
-<h1 id="二、编译-amp-入门："><a href="#二、编译-amp-入门：" class="headerlink" title="二、编译 &amp; 入门："></a>二、编译 &amp; 入门：</h1><h2 id="1、编译："><a href="#1、编译：" class="headerlink" title="1、编译："></a>1、编译：</h2><h4 id="go-build：在项目下执行；"><a href="#go-build：在项目下执行；" class="headerlink" title="go build：在项目下执行；"></a><code>go build</code>：在项目下执行；</h4><h4 id="go-run：执行脚本文件；"><a href="#go-run：执行脚本文件；" class="headerlink" title="go run：执行脚本文件；"></a><code>go run</code>：执行脚本文件；</h4><h4 id="go-install表示安装的意思，它先编译源代码得到可执行文件，然后将可执行文件移动到GOPATH的bin目录下。因为我们的环境变量中配置了GOPATH下的bin目录，所以我们就可以在任意地方直接执行可执行文件了。"><a href="#go-install表示安装的意思，它先编译源代码得到可执行文件，然后将可执行文件移动到GOPATH的bin目录下。因为我们的环境变量中配置了GOPATH下的bin目录，所以我们就可以在任意地方直接执行可执行文件了。" class="headerlink" title="go install表示安装的意思，它先编译源代码得到可执行文件，然后将可执行文件移动到GOPATH的bin目录下。因为我们的环境变量中配置了GOPATH下的bin目录，所以我们就可以在任意地方直接执行可执行文件了。"></a><code>go install</code>表示安装的意思，它先编译源代码得到可执行文件，然后将可执行文件移动到<code>GOPATH</code>的bin目录下。因为我们的环境变量中配置了<code>GOPATH</code>下的bin目录，所以我们就可以在任意地方直接执行可执行文件了。</h4><h3 id="1-1跨平台编译"><a href="#1-1跨平台编译" class="headerlink" title="1.1跨平台编译"></a>1.1跨平台编译</h3><p>默认我们<code>go build</code>的可执行文件都是当前操作系统可执行的文件，如果我想在windows下编译一个linux下可执行文件，那需要怎么做呢？</p>
-<p>只需要指定目标操作系统的平台和处理器架构即可：</p>
-<pre class="line-numbers language-bash"><code class="language-bash">SET CGO_ENABLED<span class="token operator">=</span>0  // 禁用CGO
-SET GOOS<span class="token operator">=</span>linux  // 目标平台是linux
-SET GOARCH<span class="token operator">=</span>amd64  // 目标处理器架构是amd64<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p><img src="/2018/09/07/go-yu-yan/image-20200406154851399.png" alt="image-20200406154851399"></p>
-<p><em>使用了cgo的代码是不支持跨平台编译的</em></p>
-<p>然后再执行<code>go build</code>命令，得到的就是能够在Linux平台运行的可执行文件了。</p>
-<h4 id="Mac-下编译-Linux-和-Windows平台-64位-可执行程序："><a href="#Mac-下编译-Linux-和-Windows平台-64位-可执行程序：" class="headerlink" title="Mac 下编译 Linux 和 Windows平台 64位 可执行程序："></a>Mac 下编译 Linux 和 Windows平台 64位 可执行程序：</h4><pre class="line-numbers language-bash"><code class="language-bash">CGO_ENABLED<span class="token operator">=</span>0 GOOS<span class="token operator">=</span>linux GOARCH<span class="token operator">=</span>amd64 go build
-CGO_ENABLED<span class="token operator">=</span>0 GOOS<span class="token operator">=</span>windows GOARCH<span class="token operator">=</span>amd64 go build<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h4 id="Linux-下编译-Mac-和-Windows-平台64位可执行程序："><a href="#Linux-下编译-Mac-和-Windows-平台64位可执行程序：" class="headerlink" title="Linux 下编译 Mac 和 Windows 平台64位可执行程序："></a>Linux 下编译 Mac 和 Windows 平台64位可执行程序：</h4><pre class="line-numbers language-bash"><code class="language-bash">CGO_ENABLED<span class="token operator">=</span>0 GOOS<span class="token operator">=</span>darwin GOARCH<span class="token operator">=</span>amd64 go build
-CGO_ENABLED<span class="token operator">=</span>0 GOOS<span class="token operator">=</span>windows GOARCH<span class="token operator">=</span>amd64 go build<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h4 id="Windows下编译Mac平台64位可执行程序："><a href="#Windows下编译Mac平台64位可执行程序：" class="headerlink" title="Windows下编译Mac平台64位可执行程序："></a>Windows下编译Mac平台64位可执行程序：</h4><pre class="line-numbers language-bash"><code class="language-bash">SET CGO_ENABLED<span class="token operator">=</span>0
-SET GOOS<span class="token operator">=</span>darwin
-SET GOARCH<span class="token operator">=</span>amd64
-go build<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="2、变量和常量："><a href="#2、变量和常量：" class="headerlink" title="2、变量和常量："></a>2、变量和常量：</h3><h5 id="2-1声明"><a href="#2-1声明" class="headerlink" title="2.1声明"></a>2.1声明</h5><pre class="line-numbers language-go"><code class="language-go"><span class="token keyword">var</span> name <span class="token builtin">string</span>
-<span class="token keyword">var</span> age <span class="token builtin">int</span>
-<span class="token keyword">var</span> isOk <span class="token builtin">bool</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>同等于</p>
-<pre class="line-numbers language-go"><code class="language-go"><span class="token keyword">var</span> <span class="token punctuation">(</span>
-    name <span class="token builtin">string</span>
-    age <span class="token builtin">int</span>
-    isOk <span class="token builtin">bool</span>
-<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h5 id="2-2短变量声明"><a href="#2-2短变量声明" class="headerlink" title="2.2短变量声明"></a>2.2短变量声明</h5><p>在函数内部，可以使用更简略的 <code>:=</code> 方式声明并初始化变量。<strong><em>（注意不可以在函数外使用）</em></strong></p>
-<pre class="line-numbers language-go"><code class="language-go"><span class="token keyword">package</span> main
+                <h1 id="1-常用命令："><a href="#1-常用命令：" class="headerlink" title="1.常用命令："></a>1.常用命令：</h1><blockquote>
+<p>dir         列出文件目录</p>
+<p>md        创建目录</p>
+<p>rd          删除目录</p>
+<p>cd         进入目录</p>
+<p>cd\        回到根目录</p>
+<p>del         删除文件   del *.txt  删除目录所有txt文件</p>
+<p>echo 想要写入的文本内容&gt;要写入的文件</p>
+</blockquote>
+<h4 id="java的核心机制：-JVM-和-垃圾回收"><a href="#java的核心机制：-JVM-和-垃圾回收" class="headerlink" title="java的核心机制： JVM 和 垃圾回收"></a>java的核心机制： JVM 和 垃圾回收</h4><h1 id="2-JDK-amp-JRE"><a href="#2-JDK-amp-JRE" class="headerlink" title="2.JDK  &amp;  JRE"></a>2.JDK  &amp;  JRE</h1><img src="/2020/02/14/javaee-base/image-20200513134903684.png" class="" title="image-20200513134903684">
 
-<span class="token keyword">import</span> <span class="token punctuation">(</span>
-    <span class="token string">"fmt"</span>
-<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">// 全局变量m</span>
-<span class="token keyword">var</span> m <span class="token operator">=</span> <span class="token number">100</span>
+<h4 id="与JVM关系："><a href="#与JVM关系：" class="headerlink" title="与JVM关系："></a>与JVM关系：</h4><img src="/2020/02/14/javaee-base/image-20200513135011404.png" class="" title="image-20200513135011404">
 
-<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    n <span class="token operator">:=</span> <span class="token number">10</span>
-    m <span class="token operator">:=</span> <span class="token number">200</span> <span class="token comment" spellcheck="true">// 此处声明局部变量m</span>
-    fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>m<span class="token punctuation">,</span> n<span class="token punctuation">)</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<blockquote>
-<h5 id="2-3-iota"><a href="#2-3-iota" class="headerlink" title="2.3   iota"></a>2.3   <a href=""><strong>iota</strong></a></h5></blockquote>
-<p><code>iota</code>是go语言的常量计数器，只能在常量的表达式中使用。</p>
-<p><code>iota</code>在const关键字出现时将被重置为0。const中每新增一行常量声明将使<code>iota</code>计数一次(iota可理解为const语句块中的行索引)。 使用iota能简化定义，在定义枚举时很有用。</p>
-<p>举个例子：</p>
-<pre class="line-numbers language-go"><code class="language-go"><span class="token keyword">const</span> <span class="token punctuation">(</span>
-        n1 <span class="token operator">=</span> <span class="token boolean">iota</span> <span class="token comment" spellcheck="true">//0</span>
-        n2        <span class="token comment" spellcheck="true">//1</span>
-        n3        <span class="token comment" spellcheck="true">//2</span>
-        n4        <span class="token comment" spellcheck="true">//3</span>
-    <span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h5 id="2-4几个常见的iota示例"><a href="#2-4几个常见的iota示例" class="headerlink" title="2.4几个常见的iota示例:"></a>2.4几个常见的<code>iota</code>示例:</h5><p>使用<code>_</code>跳过某些值</p>
-<pre class="line-numbers language-go"><code class="language-go"><span class="token keyword">const</span> <span class="token punctuation">(</span>
-        n1 <span class="token operator">=</span> <span class="token boolean">iota</span> <span class="token comment" spellcheck="true">//0</span>
-        n2        <span class="token comment" spellcheck="true">//1</span>
-        <span class="token boolean">_</span>
-        n4        <span class="token comment" spellcheck="true">//3</span>
-    <span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><code>iota</code>声明中间插队</p>
-<pre class="line-numbers language-go"><code class="language-go"><span class="token keyword">const</span> <span class="token punctuation">(</span>
-        n1 <span class="token operator">=</span> <span class="token boolean">iota</span> <span class="token comment" spellcheck="true">//0</span>
-        n2 <span class="token operator">=</span> <span class="token number">100</span>  <span class="token comment" spellcheck="true">//100</span>
-        n3 <span class="token operator">=</span> <span class="token boolean">iota</span> <span class="token comment" spellcheck="true">//2</span>
-        n4        <span class="token comment" spellcheck="true">//3</span>
-    <span class="token punctuation">)</span>
-    <span class="token keyword">const</span> n5 <span class="token operator">=</span> <span class="token boolean">iota</span> <span class="token comment" spellcheck="true">//0</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>定义数量级 （这里的<code>&lt;&lt;</code>表示左移操作，<code>1&lt;&lt;10</code>表示将1的二进制表示向左移10位，也就是由<code>1</code>变成了<code>10000000000</code>，也就是十进制的1024。同理<code>2&lt;&lt;2</code>表示将2的二进制表示向左移2位，也就是由<code>10</code>变成了<code>1000</code>，也就是十进制的8。）</p>
-<pre class="line-numbers language-go"><code class="language-go"><span class="token keyword">const</span> <span class="token punctuation">(</span>
-        <span class="token boolean">_</span>  <span class="token operator">=</span> <span class="token boolean">iota</span>
-        KB <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">&lt;&lt;</span> <span class="token punctuation">(</span><span class="token number">10</span> <span class="token operator">*</span> <span class="token boolean">iota</span><span class="token punctuation">)</span>
-        MB <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">&lt;&lt;</span> <span class="token punctuation">(</span><span class="token number">10</span> <span class="token operator">*</span> <span class="token boolean">iota</span><span class="token punctuation">)</span>
-        GB <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">&lt;&lt;</span> <span class="token punctuation">(</span><span class="token number">10</span> <span class="token operator">*</span> <span class="token boolean">iota</span><span class="token punctuation">)</span>
-        TB <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">&lt;&lt;</span> <span class="token punctuation">(</span><span class="token number">10</span> <span class="token operator">*</span> <span class="token boolean">iota</span><span class="token punctuation">)</span>
-        PB <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">&lt;&lt;</span> <span class="token punctuation">(</span><span class="token number">10</span> <span class="token operator">*</span> <span class="token boolean">iota</span><span class="token punctuation">)</span>
-    <span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>多个<code>iota</code>定义在一行</p>
-<pre class="line-numbers language-go"><code class="language-go"><span class="token keyword">const</span> <span class="token punctuation">(</span>
-        a<span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token boolean">iota</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token boolean">iota</span> <span class="token operator">+</span> <span class="token number">2</span> <span class="token comment" spellcheck="true">//1,2</span>
-        c<span class="token punctuation">,</span> d                      <span class="token comment" spellcheck="true">//2,3</span>
-        e<span class="token punctuation">,</span> f                      <span class="token comment" spellcheck="true">//3,4</span>
-    <span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="3、数字类型："><a href="#3、数字类型：" class="headerlink" title="3、数字类型："></a>3、数字类型：</h3><h5 id="其中，uint8就是我们熟知的byte型，int16对应C语言中的short型，int64对应C语言中的long型。"><a href="#其中，uint8就是我们熟知的byte型，int16对应C语言中的short型，int64对应C语言中的long型。" class="headerlink" title="其中，uint8就是我们熟知的byte型，int16对应C语言中的short型，int64对应C语言中的long型。"></a>其中，<code>uint8</code>就是我们熟知的<code>byte</code>型，<code>int16</code>对应C语言中的<code>short</code>型，<code>int64</code>对应C语言中的<code>long</code>型。</h5><table>
-<thead>
-<tr>
-<th align="center">类型</th>
-<th align="center">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">uint8</td>
-<td align="center">无符号 8位整型 (0 到 255)</td>
-</tr>
-<tr>
-<td align="center">uint16</td>
-<td align="center">无符号 16位整型 (0 到 65535)</td>
-</tr>
-<tr>
-<td align="center">uint32</td>
-<td align="center">无符号 32位整型 (0 到 4294967295)</td>
-</tr>
-<tr>
-<td align="center">uint64</td>
-<td align="center">无符号 64位整型 (0 到 18446744073709551615)</td>
-</tr>
-<tr>
-<td align="center">int8</td>
-<td align="center">有符号 8位整型 (-128 到 127)</td>
-</tr>
-<tr>
-<td align="center">int16</td>
-<td align="center">有符号 16位整型 (-32768 到 32767)</td>
-</tr>
-<tr>
-<td align="center">int32</td>
-<td align="center">有符号 32位整型 (-2147483648 到 2147483647)</td>
-</tr>
-<tr>
-<td align="center">int64</td>
-<td align="center">有符号 64位整型 (-9223372036854775808 到 9223372036854775807)</td>
-</tr>
-</tbody></table>
-<h3 id="3-1数字字面量语法（Number-literals-syntax）"><a href="#3-1数字字面量语法（Number-literals-syntax）" class="headerlink" title="3.1数字字面量语法（Number literals syntax）"></a>3.1数字字面量语法（Number literals syntax）</h3><h4 id="v-0b00101101，-代表二进制的-101101，相当于十进制的-45。-v-0o377，代表八进制的-377，相当于十进制的-255。-v-0x1p-2，代表十六进制的-1-除以-2²，也就是-0-25。-而且还允许我们用-来分隔数字，比如说："><a href="#v-0b00101101，-代表二进制的-101101，相当于十进制的-45。-v-0o377，代表八进制的-377，相当于十进制的-255。-v-0x1p-2，代表十六进制的-1-除以-2²，也就是-0-25。-而且还允许我们用-来分隔数字，比如说：" class="headerlink" title="v := 0b00101101， 代表二进制的 101101，相当于十进制的 45。 v := 0o377，代表八进制的 377，相当于十进制的 255。 v := 0x1p-2，代表十六进制的 1 除以 2²，也就是 0.25。 而且还允许我们用 _ 来分隔数字，比如说："></a>v := 0b00101101， 代表二进制的 101101，相当于十进制的 45。 v := 0o377，代表八进制的 377，相当于十进制的 255。 v := 0x1p-2，代表十六进制的 1 除以 2²，也就是 0.25。 而且还允许我们用 _ 来分隔数字，比如说：</h4><h4 id="v-123-456-等于-123456。"><a href="#v-123-456-等于-123456。" class="headerlink" title="v := 123_456 等于 123456。"></a>v := 123_456 等于 123456。</h4><h3 id="3-2打印浮点数时，可以使用fmt包配合动词-f，代码如下："><a href="#3-2打印浮点数时，可以使用fmt包配合动词-f，代码如下：" class="headerlink" title="3.2打印浮点数时，可以使用fmt包配合动词%f，代码如下："></a>3.2打印浮点数时，可以使用<code>fmt</code>包配合动词<code>%f</code>，代码如下：</h3><pre class="line-numbers language-go"><code class="language-go"><span class="token keyword">package</span> main
-<span class="token keyword">import</span> <span class="token punctuation">(</span>
-        <span class="token string">"fmt"</span>
-        <span class="token string">"math"</span>
-<span class="token punctuation">)</span>
-<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">"%f\n"</span><span class="token punctuation">,</span> math<span class="token punctuation">.</span>Pi<span class="token punctuation">)</span>
-        fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">"%.2f\n"</span><span class="token punctuation">,</span> math<span class="token punctuation">.</span>Pi<span class="token punctuation">)</span>
+<img src="/2020/02/14/javaee-base/image-20200513135144754.png" class="" title="image-20200513135144754">
+
+<p>java.exe  编译文件         。class：字节码文件      java.exe： 运行文件</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token comment" spellcheck="true">//第一个java程序</span>
+<span class="token keyword">class</span> <span class="token class-name">Helloworld</span><span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"HelloWrold!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="另外：vacode官方配置java环境文档"><a href="#另外：vacode官方配置java环境文档" class="headerlink" title="另外：vacode官方配置java环境文档"></a>另外：<a href="https://code.visualstudio.com/docs/languages/java" target="_blank" rel="noopener">vacode官方配置java环境文档</a></h3><h1 id="3-java的变量："><a href="#3-java的变量：" class="headerlink" title="3.java的变量："></a>3.java的变量：</h1><img src="/2020/02/14/javaee-base/image-20200513163444464.png" class="" title="image-20200513163444464">
+
+
+
+<pre class="line-numbers language-java"><code class="language-java"><span class="token comment" spellcheck="true">//其中Long型 定义要以 L 结尾：</span>
+<span class="token keyword">long</span> abc <span class="token operator">=</span> 123123L<span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//floaat 要加 F ：</span>
+<span class="token keyword">float</span> abc <span class="token operator">=</span> <span class="token number">123.123F</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// char(字符) 与 string(字符串) 不同</span>
+<span class="token keyword">char</span> a <span class="token operator">=</span> <span class="token string">'a'</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//正确</span>
+<span class="token keyword">char</span> a <span class="token operator">=</span> <span class="token string">'AB'</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//错误</span>
+<span class="token comment" spellcheck="true">//char = '';不对    string = '';可以！</span>
+
+<span class="token comment" spellcheck="true">//另外 可以为 </span>
+<span class="token keyword">char</span> <span class="token operator">=</span> <span class="token string">'\n'</span><span class="token punctuation">;</span>   或者  <span class="token keyword">char</span> <span class="token operator">=</span> <span class="token string">'\t'</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// “\t” 相等于tab的展位。</span>
+<span class="token keyword">char</span> <span class="token operator">=</span> <span class="token string">'\u0065'</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//输出转义符即ascll码 "A";</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="3-1-转换规则："><a href="#3-1-转换规则：" class="headerlink" title="3.1 转换规则："></a>3.1 转换规则：</h2><pre class="line-numbers language-java"><code class="language-java"><span class="token comment" spellcheck="true">//向高位转换：  byte&lt;short&lt;int&lt;long&lt;float&lt;double</span>
+<span class="token keyword">byte</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> b <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> c <span class="token operator">=</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//用较高位的int,或者用比int范围大的；</span>
+
+<span class="token comment" spellcheck="true">//其中，byte short char 做运算时，结果应为 int 类型：</span>
+<span class="token keyword">byte</span> a <span class="token operator">=</span> <span class="token number">1</span> <span class="token punctuation">;</span>
+<span class="token keyword">char</span> b <span class="token operator">=</span> <span class="token string">'A'</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> c <span class="token operator">=</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//输出66</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token comment" spellcheck="true">//强制类型转换：</span>
+<span class="token keyword">double</span> a <span class="token operator">=</span> <span class="token number">12.999</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> b <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span>a<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//使用int强转 输出 12，可能会出现精度损失,只是可能！</span>
+
+<span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">128</span><span class="token punctuation">;</span>
+<span class="token keyword">byte</span> b <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">byte</span><span class="token punctuation">)</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//输出结果为-128</span>
+
+<span class="token comment" spellcheck="true">//自动提升：</span>
+<span class="token keyword">long</span> a <span class="token operator">=</span> <span class="token number">123123</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//不加L 也可以，123123它属于int，用long接收，没问题，要是超过int就要加L； </span>
+
+<span class="token keyword">float</span> a <span class="token operator">=</span> <span class="token number">12.3</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//不加F 报错！12.3是double，不能用float接收；</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<img src="/2020/02/14/javaee-base/image-20200513172109296.png" class="" title="image-20200513172109296">
+
+<h1 id="4-java-运算符："><a href="#4-java-运算符：" class="headerlink" title="4.java 运算符："></a>4.java 运算符：</h1><h3 id="4-1算术、赋值、比较、逻辑、位运算、三元-运算符："><a href="#4-1算术、赋值、比较、逻辑、位运算、三元-运算符：" class="headerlink" title="4.1算术、赋值、比较、逻辑、位运算、三元 运算符："></a>4.1算术、赋值、比较、逻辑、位运算、三元 运算符：</h3><img src="/2020/02/14/javaee-base/image-20200513172621011.png" class="" title="image-20200513172621011">
+
+<h5 id="其中：-取余-的符号决定于被除数；"><a href="#其中：-取余-的符号决定于被除数；" class="headerlink" title="其中： 取余 % 的符号决定于被除数；"></a>其中： 取余 % 的符号决定于被除数；</h5><pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> b <span class="token operator">=</span> a<span class="token operator">++</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//此处分先后++</span>
+<span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span>分开写<span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span>
+<span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+a<span class="token operator">++</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 也可以是++a</span>
+<span class="token keyword">int</span> b <span class="token operator">=</span> a<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<img src="/2020/02/14/javaee-base/image-20200513174120903.png" class="" title="image-20200513174120903">
+
+<img src="/2020/02/14/javaee-base/image-20200513174219102.png" class="" title="image-20200513174219102">
+
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> b <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+String maxStr1 <span class="token operator">=</span> <span class="token punctuation">(</span>a <span class="token operator">></span> b<span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token string">"a大"</span><span class="token operator">:</span><span class="token string">"b大"</span><span class="token punctuation">;</span>
+String maxStr2 <span class="token operator">=</span> <span class="token punctuation">(</span>a <span class="token operator">></span> b<span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token string">"a大"</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>m <span class="token operator">==</span> n<span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token string">"nm相等"</span> <span class="token operator">:</span> <span class="token string">"n大"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="优先级："><a href="#优先级：" class="headerlink" title="优先级："></a>优先级：</h3><img src="/2020/02/14/javaee-base/image-20200513174839836.png" class="" title="image-20200513174839836">
+
+
+
+<h1 id="5-java的输入，需要用到Scanner"><a href="#5-java的输入，需要用到Scanner" class="headerlink" title="5.java的输入，需要用到Scanner:"></a>5.java的输入，需要用到<code>Scanner</code>:</h1><pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>Scanner<span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">ScannerTest</span><span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>“请输入：”<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Scanner scan <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Scanner</span><span class="token punctuation">(</span>System<span class="token punctuation">.</span>in<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> num <span class="token operator">=</span> scan<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//此处为int,string为 string name = scan.next();  char为charAt()</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="3-3复数"><a href="#3-3复数" class="headerlink" title="3.3复数"></a>3.3复数</h3><p>complex64和complex128</p>
-<pre class="line-numbers language-go"><code class="language-go"><span class="token keyword">var</span> c1 <span class="token builtin">complex64</span>
-c1 <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token number">2i</span>
-<span class="token keyword">var</span> c2 <span class="token builtin">complex128</span>
-c2 <span class="token operator">=</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token number">3i</span>
-fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>c1<span class="token punctuation">)</span>
-fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>c2<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="3-4布尔型"><a href="#3-4布尔型" class="headerlink" title="3.4布尔型"></a>3.4布尔型</h3><h4 id="Go语言中以bool类型进行声明布尔型数据，布尔型数据只有true（真）和false（假）两个值。"><a href="#Go语言中以bool类型进行声明布尔型数据，布尔型数据只有true（真）和false（假）两个值。" class="headerlink" title="Go语言中以bool类型进行声明布尔型数据，布尔型数据只有true（真）和false（假）两个值。"></a>Go语言中以<code>bool</code>类型进行声明布尔型数据，布尔型数据只有<code>true（真）</code>和<code>false（假）</code>两个值。</h4><ol>
-<li>布尔类型变量的默认值为<code>false</code>。</li>
-<li>Go 语言中不允许将整型强制转换为布尔型.（C中可以 false=0，true=1）</li>
-<li>布尔型无法参与数值运算，也无法与其他类型进行转换。</li>
-</ol>
-<h3 id="3-5字符串转义符"><a href="#3-5字符串转义符" class="headerlink" title="3.5字符串转义符"></a>3.5字符串转义符</h3><p>Go 语言的字符串常见转义符包含回车、换行、单双引号、制表符等，如下表所示。</p>
-<table>
-<thead>
-<tr>
-<th align="center">转义符</th>
-<th align="center">含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>\r</code></td>
-<td align="center">回车符（返回行首）</td>
-</tr>
-<tr>
-<td align="center"><code>\n</code></td>
-<td align="center">换行符（直接跳到下一行的同列位置）</td>
-</tr>
-<tr>
-<td align="center"><code>\t</code></td>
-<td align="center">制表符</td>
-</tr>
-<tr>
-<td align="center"><code>\'</code></td>
-<td align="center">单引号</td>
-</tr>
-<tr>
-<td align="center"><code>\"</code></td>
-<td align="center">双引号</td>
-</tr>
-<tr>
-<td align="center"><code>\\</code></td>
-<td align="center">反斜杠</td>
-</tr>
-</tbody></table>
-<p>举个例子，我们要打印一个Windows平台下的一个文件路径：</p>
-<pre class="line-numbers language-go"><code class="language-go"><span class="token keyword">package</span> main
-<span class="token keyword">import</span> <span class="token punctuation">(</span>
-    <span class="token string">"fmt"</span>
-<span class="token punctuation">)</span>
-<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">"str := \"c:\\Code\\lesson1\\go.exe\""</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="3-5-1字符串的常用操作"><a href="#3-5-1字符串的常用操作" class="headerlink" title="3.5.1字符串的常用操作"></a>3.5.1字符串的常用操作</h3><table>
-<thead>
-<tr>
-<th align="center">方法</th>
-<th align="center">介绍</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">len(str)</td>
-<td align="center">求长度</td>
-</tr>
-<tr>
-<td align="center">+或fmt.Sprintf</td>
-<td align="center">拼接字符串</td>
-</tr>
-<tr>
-<td align="center">strings.Split</td>
-<td align="center">分割</td>
-</tr>
-<tr>
-<td align="center">strings.contains</td>
-<td align="center">判断是否包含</td>
-</tr>
-<tr>
-<td align="center">strings.HasPrefix,strings.HasSuffix</td>
-<td align="center">前缀/后缀判断</td>
-</tr>
-<tr>
-<td align="center">strings.Index(),strings.LastIndex()</td>
-<td align="center">子串出现的位置</td>
-</tr>
-<tr>
-<td align="center">strings.Join(a[]string, sep string)</td>
-<td align="center">join操作</td>
-</tr>
-</tbody></table>
-<h3 id="3-6byte和rune类型"><a href="#3-6byte和rune类型" class="headerlink" title="3.6byte和rune类型"></a>3.6byte和rune类型</h3><p>组成每个字符串的元素叫做“字符”，可以通过遍历或者单个获取字符串元素获得字符。 字符用单引号（’）包裹起来，如：</p>
-<pre class="line-numbers language-go"><code class="language-go"><span class="token keyword">var</span> a <span class="token operator">:=</span> <span class="token string">'中'</span>
-<span class="token keyword">var</span> b <span class="token operator">:=</span> <span class="token string">'x'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>Go 语言的字符有以下两种：</p>
-<ol>
-<li><code>uint8</code>类型，或者叫 byte 型，代表了<code>ASCII码</code>的一个字符。</li>
-<li><code>rune</code>类型，代表一个 <code>UTF-8字符</code>。</li>
-</ol>
-<p>当需要处理中文、日文或者其他复合字符时，则需要用到<code>rune</code>类型。<code>rune</code>类型实际是一个<code>int32</code>。</p>
-<p>Go 使用了特殊的 rune 类型来处理 Unicode，让基于 Unicode 的文本处理更为方便，也可以使用 byte 型进行默认字符串处理，性能和扩展性都有照顾。</p>
-<pre class="line-numbers language-go"><code class="language-go"><span class="token comment" spellcheck="true">// 遍历字符串</span>
-<span class="token keyword">func</span> <span class="token function">traversalString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    s <span class="token operator">:=</span> <span class="token string">"hello沙河"</span>
-    <span class="token keyword">for</span> i <span class="token operator">:=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token function">len</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">//byte</span>
-        fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">"%v(%c) "</span><span class="token punctuation">,</span> s<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> s<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+<h2 id="5-1-java-的分支语句-switch-case语句："><a href="#5-1-java-的分支语句-switch-case语句：" class="headerlink" title="5.1 java 的分支语句 switch-case语句："></a>5.1 java 的分支语句 switch-case语句：</h2><pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">int</span> num <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token keyword">switch</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">{</span>   <span class="token comment" spellcheck="true">//可以是byte、short、char、shring、枚举类型.. 就是不可以放 布尔型;</span>
+    <span class="token keyword">case</span> <span class="token number">0</span><span class="token operator">:</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>ZERO<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token number">1</span><span class="token operator">:</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>ONE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token number">2</span><span class="token operator">:</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>TWO<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">default</span><span class="token operator">:</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>ZERO<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="5-1-java的内嵌循环："><a href="#5-1-java的内嵌循环：" class="headerlink" title="5.1 java的内嵌循环："></a>5.1 java的内嵌循环：</h2><pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span><span class="token number">5</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>j <span class="token operator">&lt;=</span> <span class="token number">4</span> <span class="token operator">-</span> i<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> k <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>k <span class="token operator">&lt;</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>k<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"# "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i <span class="token operator">&lt;</span> <span class="token number">4</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>j <span class="token operator">&lt;=</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> k <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>k <span class="token operator">&lt;</span> <span class="token number">4</span> <span class="token operator">-</span> i<span class="token punctuation">;</span>k<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"# "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">//输出：</span>
+    #
+   # #
+  # # #
+ # # # #
+# # # # #
+ # # # #
+  # # #
+   # #
+    #<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token comment" spellcheck="true">// 求100000以内的质数</span>
+<span class="token keyword">class</span> <span class="token class-name">test</span><span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">int</span> i<span class="token punctuation">,</span>j<span class="token punctuation">;</span>
+        <span class="token keyword">long</span> start <span class="token operator">=</span> System<span class="token punctuation">.</span><span class="token function">currentTimeMillis</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+        <span class="token keyword">for</span> <span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span><span class="token number">100000</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span>j<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span>j<span class="token operator">&lt;</span>i<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">%</span> j <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> j<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span>j<span class="token operator">+</span><span class="token string">" "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token keyword">long</span> end <span class="token operator">=</span> System<span class="token punctuation">.</span><span class="token function">currentTimeMillis</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"花时:"</span> <span class="token operator">+</span> <span class="token punctuation">(</span>end<span class="token operator">-</span>start<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
     <span class="token punctuation">}</span>
-    fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-    <span class="token keyword">for</span> <span class="token boolean">_</span><span class="token punctuation">,</span> r <span class="token operator">:=</span> <span class="token keyword">range</span> s <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">//rune</span>
-        fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">"%v(%c) "</span><span class="token punctuation">,</span> r<span class="token punctuation">,</span> r<span class="token punctuation">)</span>
-    <span class="token punctuation">}</span>
-    fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>输出：</p>
-<pre class="line-numbers language-bash"><code class="language-bash">104<span class="token punctuation">(</span>h<span class="token punctuation">)</span> 101<span class="token punctuation">(</span>e<span class="token punctuation">)</span> 108<span class="token punctuation">(</span>l<span class="token punctuation">)</span> 108<span class="token punctuation">(</span>l<span class="token punctuation">)</span> 111<span class="token punctuation">(</span>o<span class="token punctuation">)</span> 230<span class="token punctuation">(</span>æ<span class="token punctuation">)</span> 178<span class="token punctuation">(</span>²<span class="token punctuation">)</span> 153<span class="token punctuation">(</span><span class="token punctuation">)</span> 230<span class="token punctuation">(</span>æ<span class="token punctuation">)</span> 178<span class="token punctuation">(</span>²<span class="token punctuation">)</span> 179<span class="token punctuation">(</span>³<span class="token punctuation">)</span> 
-104<span class="token punctuation">(</span>h<span class="token punctuation">)</span> 101<span class="token punctuation">(</span>e<span class="token punctuation">)</span> 108<span class="token punctuation">(</span>l<span class="token punctuation">)</span> 108<span class="token punctuation">(</span>l<span class="token punctuation">)</span> 111<span class="token punctuation">(</span>o<span class="token punctuation">)</span> 27801<span class="token punctuation">(</span>沙<span class="token punctuation">)</span> 27827<span class="token punctuation">(</span>河<span class="token punctuation">)</span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>因为UTF8编码下一个中文汉字由3~4个字节组成，所以我们不能简单的按照字节去遍历一个包含中文的字符串，否则就会出现上面输出中第一行的结果。</p>
-<p>字符串底层是一个byte数组，所以可以和<code>[]byte</code>类型相互转换。字符串是不能修改的 字符串是由byte字节组成，所以字符串的长度是byte字节的长度。 rune类型用来表示utf8字符，一个rune字符由一个或多个byte组成。</p>
-<h3 id="3-6-1修改字符串"><a href="#3-6-1修改字符串" class="headerlink" title="3.6.1修改字符串"></a>3.6.1修改字符串</h3><p>要修改字符串，需要先将其转换成<code>[]rune</code>或<code>[]byte</code>，完成后再转换为<code>string</code>。无论哪种转换，都会重新分配内存，并复制字节数组。</p>
-<pre class="line-numbers language-go"><code class="language-go"><span class="token keyword">func</span> <span class="token function">changeString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    s1 <span class="token operator">:=</span> <span class="token string">"big"</span>
-    <span class="token comment" spellcheck="true">// 强制类型转换</span>
-    byteS1 <span class="token operator">:=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token function">byte</span><span class="token punctuation">(</span>s1<span class="token punctuation">)</span>
-    byteS1<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'p'</span>
-    fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token function">string</span><span class="token punctuation">(</span>byteS1<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">//没有优化，花时2000毫秒左右</span>
 
-    s2 <span class="token operator">:=</span> <span class="token string">"白萝卜"</span>
-    runeS2 <span class="token operator">:=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token function">rune</span><span class="token punctuation">(</span>s2<span class="token punctuation">)</span>
-    runeS2<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'红'</span>
-    fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token function">string</span><span class="token punctuation">(</span>runeS2<span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="3-7类型转换"><a href="#3-7类型转换" class="headerlink" title="3.7类型转换"></a>3.7类型转换</h2><p>Go语言中只有强制类型转换，没有隐式类型转换。该语法只能在两个类型之间支持相互转换的时候使用。</p>
-<p>强制类型转换的基本语法如下：</p>
-<pre class="line-numbers language-bash"><code class="language-bash">T<span class="token punctuation">(</span>表达式<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>其中，T表示要转换的类型。表达式包括变量、复杂算子和函数返回值等.</p>
-<p>比如计算直角三角形的斜边长时使用math包的Sqrt()函数，该函数接收的是float64类型的参数，而变量a和b都是int类型的，这个时候就需要将a和b强制类型转换为float64类型。</p>
-<pre class="line-numbers language-go"><code class="language-go"><span class="token keyword">func</span> <span class="token function">sqrtDemo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">var</span> a<span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span>
-    <span class="token keyword">var</span> c <span class="token builtin">int</span>
-    <span class="token comment" spellcheck="true">// math.Sqrt()接收的参数是float64类型，需要强制转换</span>
-    c <span class="token operator">=</span> <span class="token function">int</span><span class="token punctuation">(</span>math<span class="token punctuation">.</span><span class="token function">Sqrt</span><span class="token punctuation">(</span><span class="token function">float64</span><span class="token punctuation">(</span>a<span class="token operator">*</span>a <span class="token operator">+</span> b<span class="token operator">*</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-    fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<script>
+<span class="token comment" spellcheck="true">//优化后:</span>
+<span class="token keyword">class</span> <span class="token class-name">Helloworld</span><span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">boolean</span> isFlag <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//标识i是否被除尽,一旦除尽,修改其值</span>
+        <span class="token keyword">long</span> start <span class="token operator">=</span> System<span class="token punctuation">.</span><span class="token function">currentTimeMillis</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+        <span class="token keyword">int</span> count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span><span class="token number">100000</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token comment" spellcheck="true">//for (int j=2;j&lt;i;j++){</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span>j<span class="token operator">&lt;</span>Math<span class="token punctuation">.</span><span class="token function">sqrt</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">%</span> j <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                isFlag <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>isFlag<span class="token operator">==</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    <span class="token comment" spellcheck="true">//System.out.print(i + " ");</span>
+                    count<span class="token operator">++</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            isFlag <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//重置isFlag</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">long</span> end <span class="token operator">=</span> System<span class="token punctuation">.</span><span class="token function">currentTimeMillis</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"个数:"</span> <span class="token operator">+</span> count<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"花时:"</span> <span class="token operator">+</span> <span class="token punctuation">(</span>end<span class="token operator">-</span>start<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">//花时18毫秒！</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="其中break-结束当前循环-continue是结束本次循环；且break后面不能有执行语句；continue后面可以"><a href="#其中break-结束当前循环-continue是结束本次循环；且break后面不能有执行语句；continue后面可以" class="headerlink" title="其中break 结束当前循环  continue是结束本次循环；且break后面不能有执行语句；continue后面可以;"></a>其中break 结束当前循环  continue是结束本次循环；且break后面不能有执行语句；continue后面可以;</h4><pre class="line-numbers language-java"><code class="language-java"><span class="token comment" spellcheck="true">//break与continue都是默认结束最近的一个for</span>
+<span class="token comment" spellcheck="true">//带标签的break： continue同理;</span>
+Flag<span class="token operator">:</span><span class="token keyword">for</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+   <span class="token keyword">for</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+   <span class="token keyword">break</span> Flag<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//结束带Flag的第一个for</span>
+
+<span class="token comment" spellcheck="true">//应用到上一题的求质数:</span>
+<span class="token keyword">class</span> <span class="token class-name">Helloworld</span><span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">long</span> start <span class="token operator">=</span> System<span class="token punctuation">.</span><span class="token function">currentTimeMillis</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+        <span class="token keyword">int</span> count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    Flag<span class="token operator">:</span><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span><span class="token number">100000</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span>j<span class="token operator">&lt;</span>Math<span class="token punctuation">.</span><span class="token function">sqrt</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">%</span> j <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token keyword">continue</span> Flag<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//其意就是如果i%j==0 直接跳出第二个循环，跳到带Flag标签的for；</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+            count<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+        <span class="token keyword">long</span> end <span class="token operator">=</span> System<span class="token punctuation">.</span><span class="token function">currentTimeMillis</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"个数:"</span> <span class="token operator">+</span> count<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"花时:"</span> <span class="token operator">+</span> <span class="token punctuation">(</span>end<span class="token operator">-</span>start<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">//花时同样是18毫秒，但是代码量更少~</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="项目一参考"><a href="#项目一参考" class="headerlink" title="###项目一参考###"></a><a href="[https://blog.csdn.net/Ricardo__Lu/article/details/96124706?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522158938725519724839246647%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.57652%2522%257D&amp;request_id=158938725519724839246647&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v25-10-96124706.nonecase&amp;utm_term=readKeyBoard](https://blog.csdn.net/Ricardo__Lu/article/details/96124706?ops_request_misc=%7B%22request%5Fid%22%3A%22158938725519724839246647%22%2C%22scm%22%3A%2220140713.130102334.pc%5Fall.57652%22%7D&amp;request_id=158938725519724839246647&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v25-10-96124706.nonecase&amp;utm_term=readKeyBoard)">###项目一参考###</a></h3><h3 id="项目一参考-1"><a href="#项目一参考-1" class="headerlink" title="####项目一参考####"></a><a href="[https://blog.csdn.net/weixin_42517667/article/details/82620191?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522158938725519724839246657%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=158938725519724839246657&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v25-2-82620191.nonecase&amp;utm_term=readKeyBoard](https://blog.csdn.net/weixin_42517667/article/details/82620191?ops_request_misc=%7B%22request%5Fid%22%3A%22158938725519724839246657%22%2C%22scm%22%3A%2220140713.130102334..%22%7D&amp;request_id=158938725519724839246657&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v25-2-82620191.nonecase&amp;utm_term=readKeyBoard)">####项目一参考####</a></h3><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -916,7 +838,7 @@ fmt<span class="token punctuation">.</span><span class="token function">Println<
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">阮荣望</a>
+                    <a href="/about" rel="external nofollow noreferrer">Friend_Rrw</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -926,7 +848,7 @@ fmt<span class="token punctuation">.</span><span class="token function">Println<
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://1097872822.github.io/2018/09/07/go-yu-yan/">http://1097872822.github.io/2018/09/07/go-yu-yan/</a>
+                    <a href="http://1097872822.github.io/2020/02/14/javaee-base/">http://1097872822.github.io/2020/02/14/javaee-base/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -939,7 +861,7 @@ fmt<span class="token punctuation">.</span><span class="token function">Println<
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">阮荣望</a>
+                    <a href="/about" target="_blank">Friend_Rrw</a>
                     !
                 </span>
             </div>
@@ -1392,37 +1314,43 @@ fmt<span class="token punctuation">.</span><span class="token function">Println<
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/02/02/data-warehouse/">
+                <a href="/2020/02/14/javaee-base/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Data Warehouse">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="Javaee-base">
                         
-                        <span class="card-title">Data Warehouse</span>
+                        <span class="card-title">Javaee-base</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary">
                         
-                            ==数据仓库==：数据仓库是一个面向主题的、集成的、相对稳定的、反映历史变化的数据集合，它用于支持企业或组织的决策分析处理。==与数据库的不
+                            1.常用命令：
+dir         列出文件目录
+md        创建目录
+rd          删除目录
+cd         
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-02-02
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-14
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            阮荣望
+                            Friend_Rrw
                             
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -1430,34 +1358,27 @@ fmt<span class="token punctuation">.</span><span class="token function">Println<
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2018/09/07/go-yu-yan/">
+                <a href="/2020/02/02/get-post/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Go语言">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="get &amp; post">
                         
-                        <span class="card-title">Go语言</span>
+                        <span class="card-title">get &amp; post</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary block-with-text">
+                    <div class="summary">
                         
-                            一、GO入门url ：老师博客1、下载/查看版本：
-2、配置Go path：
-
-
-
-3、安装编译器VS CODEVS Code[官方下载地址] ：https://code.visualstudio.com/Download
-
-工具包下载：1
+                            后端入门了解目的：实现API   了解API 的get/post 以及它里面的 request、param、query和body框架：fla
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2018-09-07
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-02
                             </span>
                         <span class="publish-author">
                             
@@ -1467,7 +1388,6 @@ fmt<span class="token punctuation">.</span><span class="token function">Println<
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
